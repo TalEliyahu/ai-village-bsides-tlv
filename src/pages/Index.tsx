@@ -4,7 +4,6 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
-import WhyAttendSection from '@/components/WhyAttendSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
@@ -15,7 +14,6 @@ const Index = () => {
       <AboutSection />
       <ScheduleSection />
       <SpeakersSection />
-      <WhyAttendSection />
       <Footer />
       <ScrollToTopButton />
     </main>
