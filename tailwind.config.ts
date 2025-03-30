@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,15 +53,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Comic book theme colors
+				comic: {
+					red: '#ea384c',
+					blue: '#3b82f6',
+					yellow: '#f6e05e',
+					black: '#111111',
+					white: '#ffffff'
 				}
 			},
 			borderRadius: {
@@ -68,27 +67,48 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			fontFamily: {
+				bangers: ['Bangers', 'cursive'],
+				comic: ['Comic Neue', 'cursive']
+			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				'pulse-bright': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.6' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'skew': {
+					'0%, 100%': { transform: 'skewX(0deg)' },
+					'50%': { transform: 'skewX(-5deg)' },
+				},
+				'wiggle': {
+					'0%, 100%': { transform: 'rotate(-2deg)' },
+					'50%': { transform: 'rotate(2deg)' },
+				},
+				'zoom-in-out': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-bright': 'pulse-bright 3s ease-in-out infinite',
+				'float': 'float 6s ease-in-out infinite',
+				'skew': 'skew 8s ease-in-out infinite',
+				'wiggle': 'wiggle 6s ease-in-out infinite',
+				'zoom-in-out': 'zoom-in-out 6s ease-in-out infinite',
 			}
 		}
 	},
