@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Shield, Cpu, Zap, Brain } from 'lucide-react';
 
 const AboutSection = () => {
   return (
@@ -40,37 +39,6 @@ const AboutSection = () => {
               <p className="text-comic-black font-comic text-lg">
                 The AI Village creates a space where experts can exchange ideas, demonstrate new attack vectors, and collaborate on solutions that make AI systems more secure and resilient.
               </p>
-            </div>
-          </div>
-        </div>
-        
-        {/* Topics */}
-        <div className="mt-16">
-          <h3 className="font-bangers text-3xl text-white mb-8 text-center">SUPERPOWERED TOPICS</h3>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-comic-red p-6 comic-border text-white">
-              <Shield className="h-10 w-10 mb-4" />
-              <h4 className="font-bangers text-xl mb-2">Adversarial Machine Learning</h4>
-              <p className="font-comic text-sm">Techniques to fool AI systems and defenses against these attacks</p>
-            </div>
-            
-            <div className="bg-comic-blue p-6 comic-border text-white">
-              <Cpu className="h-10 w-10 mb-4" />
-              <h4 className="font-bangers text-xl mb-2">Model Red Teaming</h4>
-              <p className="font-comic text-sm">Methodologies for testing AI systems against adversarial scenarios</p>
-            </div>
-            
-            <div className="bg-comic-yellow p-6 comic-border text-comic-black">
-              <Zap className="h-10 w-10 mb-4" />
-              <h4 className="font-bangers text-xl mb-2">Prompt Injection</h4>
-              <p className="font-comic text-sm">Exploring the world of LLM security and how to defend against prompt-based attacks</p>
-            </div>
-            
-            <div className="bg-comic-white p-6 comic-border text-comic-black">
-              <Brain className="h-10 w-10 mb-4" />
-              <h4 className="font-bangers text-xl mb-2">Data Poisoning</h4>
-              <p className="font-comic text-sm">Understanding how tainted training data can compromise AI system integrity</p>
             </div>
           </div>
         </div>
