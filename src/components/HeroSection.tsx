@@ -21,25 +21,25 @@ const HeroSection = () => {
         </div>
         
         <div className="inline-block bg-comic-red p-4 comic-border transform rotate-2 mb-4">
-          <h2 className="font-bangers tracking-wider text-white text-3xl">
+          <h2 className="font-luckiest tracking-wider text-white text-3xl">
             JUNE 26, 2025 @ TEL AVIV UNIVERSITY
           </h2>
         </div>
         
-        <h1 className="font-bangers text-6xl md:text-8xl mb-6 text-white comic-text-stroke animate-skew">
+        <h1 className="font-luckiest text-6xl md:text-8xl mb-6 text-white comic-text-stroke animate-skew">
           THE AI VILLAGE
           <span className="block text-comic-yellow">@ BSIDES TLV</span>
         </h1>
         
         <div className="bg-comic-blue p-6 comic-panel-slant mb-12 animate-wiggle">
-          <p className="font-comic text-xl md:text-2xl text-white font-bold">
+          <p className="font-rubik text-xl md:text-2xl text-white font-bold tracking-wide">
             Exploring the intersection of AI and cybersecurity
           </p>
         </div>
         
         <div className="speech-bubble max-w-lg mx-auto mb-12 animate-float">
-          <p className="font-comic text-comic-black text-lg">
-            <span className="font-bold">COMIC BOOK MULTIVERSE EDITION!</span> Join heroes and villains from across the AI security universe for a day of hacking, learning, and collaboration!
+          <p className="font-rubik text-comic-black text-lg">
+            <span className="font-black">COMIC BOOK MULTIVERSE EDITION!</span> Join heroes and villains from across the AI security universe for a day of hacking, learning, and collaboration!
           </p>
         </div>
         

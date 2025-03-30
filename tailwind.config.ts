@@ -69,7 +69,9 @@ export default {
 			},
 			fontFamily: {
 				bangers: ['Bangers', 'cursive'],
-				comic: ['Comic Neue', 'cursive']
+				comic: ['Comic Neue', 'cursive'],
+				luckiest: ['Luckiest Guy', 'cursive'],
+				rubik: ['Rubik', 'sans-serif']
 			},
 			keyframes: {
 				'accordion-down': {
