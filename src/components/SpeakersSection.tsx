@@ -31,7 +31,8 @@ const SpeakersSection = () => {
       organization: "Adversa AI",
       placeholder: "AP",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/alex-polyakov-cyber/"
+      linkedinUrl: "https://www.linkedin.com/in/alex-polyakov-cyber/",
+      imageUrl: "/lovable-uploads/d27d78aa-7c98-4856-ad25-e16e82d7cbfb.png"
     },
     {
       name: "Vitaly Simonovich",
