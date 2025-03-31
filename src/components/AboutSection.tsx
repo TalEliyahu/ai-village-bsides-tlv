@@ -70,17 +70,29 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* WHO SHOULD JOIN section */}
+        {/* WHO SHOULD JOIN section - Updated with more prominent styling */}
         <div className="mt-12">
-          <div className="comic-panel bg-comic-red relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-            <div className="absolute -top-8 left-1/2 -translate-x-1/2 h-28 w-28 md:h-32 md:w-32 bg-comic-blue rounded-full flex items-center justify-center shadow-lg z-10">
-              <span className="font-bangers text-white text-2xl md:text-3xl">🤝 JOIN</span>
+          <div className="comic-panel bg-comic-red relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 border-4 border-comic-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.8)]">
+            <div className="absolute -top-10 left-1/2 -translate-x-1/2 h-32 w-32 md:h-36 md:w-36 bg-comic-yellow rounded-full flex items-center justify-center shadow-lg z-10 border-4 border-comic-black animate-pulse-bright">
+              <span className="font-bangers text-comic-black text-3xl md:text-4xl text-center">🤝 JOIN US!</span>
             </div>
-            <div className="pt-20 px-6 md:px-8 pb-6 md:pb-8">
-              <h3 className="font-bangers text-2xl md:text-3xl text-white mb-4 text-center">WHO SHOULD JOIN?</h3>
-              <p className="text-white font-comic text-lg md:text-xl leading-relaxed">
-                If you're curious about how AI systems break — and how to secure them — you belong here. Whether you're a security researcher, AI practitioner, policy wonk, or hacker at heart, the AI Village is your space to engage, share, and learn.
-              </p>
+            <div className="pt-24 px-6 md:px-8 pb-6 md:pb-8">
+              <h3 className="font-bangers text-3xl md:text-4xl text-white mb-6 text-center comic-text-stroke">WHO SHOULD JOIN?</h3>
+              <div className="bg-white/20 p-6 rounded-lg backdrop-blur-sm">
+                <p className="text-white font-comic text-xl md:text-2xl leading-relaxed text-center">
+                  If you're curious about how AI systems break — and how to secure them — you belong here. Whether you're a security researcher, AI practitioner, policy wonk, or hacker at heart, the AI Village is your space to engage, share, and learn.
+                </p>
+              </div>
+              <div className="flex justify-center mt-8">
+                <a 
+                  href="https://bsidestlv.com/register" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-bangers text-xl md:text-2xl bg-comic-yellow text-comic-black px-8 py-3 rounded-lg border-3 border-comic-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.8)] hover:translate-y-1 hover:translate-x-1 transition-all duration-200"
+                >
+                  REGISTER NOW!
+                </a>
+              </div>
             </div>
           </div>
         </div>
