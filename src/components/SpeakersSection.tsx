@@ -2,6 +2,7 @@
 import React from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Linkedin } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 type Speaker = {
   name: string;
@@ -10,6 +11,7 @@ type Speaker = {
   placeholder: string;
   confirmed: boolean;
   linkedinUrl?: string; // Optional LinkedIn profile URL
+  imageUrl?: string; // Optional image URL
 };
 
 const SpeakersSection = () => {
@@ -86,7 +88,8 @@ const SpeakersSection = () => {
       organization: "Pillar Security",
       placeholder: "ZK",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/ziv-karliner-72629893/"
+      linkedinUrl: "https://www.linkedin.com/in/ziv-karliner-72629893/",
+      imageUrl: "/lovable-uploads/51ca7cd5-565c-431f-8c23-c5427cc07cca.png"
     },
     {
       name: "Speaker TBA",
@@ -115,9 +118,20 @@ const SpeakersSection = () => {
               className={`comic-border ${speaker.confirmed ? 'bg-white' : 'bg-gray-100'} p-0.5 transform ${index % 2 === 0 ? 'rotate-1' : '-rotate-1'} hover:rotate-0 transition-all duration-300`}
             >
               <div className="bg-comic-black p-1 relative">
-                <div className={`aspect-square flex items-center justify-center text-4xl md:text-5xl font-bangers ${speaker.confirmed ? 'bg-comic-red' : 'bg-gray-400'} text-white`}>
-                  {speaker.placeholder}
-                </div>
+                {speaker.imageUrl ? (
+                  <div className="aspect-square bg-comic-red">
+                    <Avatar className="w-full h-full rounded-none">
+                      <AvatarImage src={speaker.imageUrl} alt={speaker.name} className="object-cover" />
+                      <AvatarFallback className="bg-comic-red text-4xl md:text-5xl font-bangers text-white">
+                        {speaker.placeholder}
+                      </AvatarFallback>
+                    </Avatar>
+                  </div>
+                ) : (
+                  <div className={`aspect-square flex items-center justify-center text-4xl md:text-5xl font-bangers ${speaker.confirmed ? 'bg-comic-red' : 'bg-gray-400'} text-white`}>
+                    {speaker.placeholder}
+                  </div>
+                )}
                 
                 <div className="p-4 bg-white">
                   <div className="flex items-center justify-between">
