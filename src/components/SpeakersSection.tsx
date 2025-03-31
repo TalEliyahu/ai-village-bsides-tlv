@@ -82,7 +82,8 @@ const SpeakersSection = () => {
       organization: "Astrix Security",
       placeholder: "TS",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/reverser/"
+      linkedinUrl: "https://www.linkedin.com/in/reverser/",
+      imageUrl: "/lovable-uploads/3b9c43df-da61-4af7-bd14-b8785cee143d.png"
     },
     {
       name: "Ziv Karliner",
