@@ -68,7 +68,8 @@ const SpeakersSection = () => {
       organization: "Guardz",
       placeholder: "ES",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/elishlomo/"
+      linkedinUrl: "https://www.linkedin.com/in/elishlomo/",
+      imageUrl: "/lovable-uploads/24346592-ab6d-40dc-bda8-8f708b22408f.png"
     },
     {
       name: "Ran Dubin",
