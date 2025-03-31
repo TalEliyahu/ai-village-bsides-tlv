@@ -93,59 +93,59 @@ const AboutSection = () => {
               <h3 className="font-bangers text-2xl md:text-3xl text-comic-black">💬 TOPICS WE'LL COVER</h3>
             </div>
             <div className="px-6 md:px-8 pb-6 md:pb-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-8">
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Red teaming LLMs and generative AI systems</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Adversarial evasion and bypass techniques</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">AI model abuse, jailbreaks, and prompt manipulation</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Training data attacks and poisoning</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Defense strategies for robust AI deployment</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Securing the responsible use of AI in security operations</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Prompt injection and indirect prompt chaining attacks</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">AI supply chain risks (model provenance, tampering, and dependencies)</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Detecting AI-generated content in security workflows</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Interpretability and explainability in high-stakes environments</p>
                 </div>
                 
                 <div className="flex items-start">
-                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-2" size={20} />
+                  <CheckCircle className="text-comic-red flex-shrink-0 mt-1 mr-3" size={22} />
                   <p className="text-comic-black font-comic text-lg">Evaluating the limits of AI in incident response and threat detection</p>
                 </div>
               </div>
