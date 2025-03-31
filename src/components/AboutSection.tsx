@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { CheckCircle } from 'lucide-react';
@@ -19,7 +20,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {/* WHAT section */}
           <div className="comic-panel bg-comic-white relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-            <div className="absolute -top-4 -left-4 h-28 w-28 md:h-32 md:w-32 bg-comic-red rounded-full flex items-center justify-center transform rotate-12 shadow-lg z-10">
+            <div className="absolute -top-6 -left-6 h-28 w-28 md:h-32 md:w-32 bg-comic-red rounded-full flex items-center justify-center transform rotate-12 shadow-lg z-10">
               <span className="font-bangers text-white text-3xl transform -rotate-12">🔍 WHAT</span>
             </div>
             <div className="pt-20 px-6 md:px-8 pb-6 md:pb-8">
@@ -31,7 +32,7 @@ const AboutSection = () => {
           
           {/* WHY section */}
           <div className="comic-panel bg-comic-yellow relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-            <div className="absolute -top-4 -right-4 h-28 w-28 md:h-32 md:w-32 bg-comic-blue rounded-full flex items-center justify-center transform -rotate-12 shadow-lg z-10">
+            <div className="absolute -top-6 -right-6 h-28 w-28 md:h-32 md:w-32 bg-comic-blue rounded-full flex items-center justify-center transform -rotate-12 shadow-lg z-10">
               <span className="font-bangers text-white text-3xl transform rotate-12">❓ WHY</span>
             </div>
             <div className="pt-20 px-6 md:px-8 pb-6 md:pb-8">
@@ -46,7 +47,7 @@ const AboutSection = () => {
 
           {/* MISSION section */}
           <div className="comic-panel bg-comic-blue relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-            <div className="absolute -top-4 -left-4 h-28 w-28 md:h-32 md:w-32 bg-comic-red rounded-full flex items-center justify-center transform rotate-12 shadow-lg z-10">
+            <div className="absolute -top-6 -left-6 h-28 w-28 md:h-32 md:w-32 bg-comic-red rounded-full flex items-center justify-center transform rotate-12 shadow-lg z-10">
               <span className="font-bangers text-white text-3xl transform -rotate-12">🎯 MISSION</span>
             </div>
             <div className="pt-20 px-6 md:px-8 pb-6 md:pb-8">
@@ -58,7 +59,7 @@ const AboutSection = () => {
           
           {/* VISION section */}
           <div className="comic-panel bg-comic-white relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-            <div className="absolute -top-4 -right-4 h-28 w-28 md:h-32 md:w-32 bg-comic-yellow rounded-full flex items-center justify-center transform -rotate-12 shadow-lg z-10">
+            <div className="absolute -top-6 -right-6 h-28 w-28 md:h-32 md:w-32 bg-comic-yellow rounded-full flex items-center justify-center transform -rotate-12 shadow-lg z-10">
               <span className="font-bangers text-white text-3xl transform rotate-12">🌟 VISION</span>
             </div>
             <div className="pt-20 px-6 md:px-8 pb-6 md:pb-8">
@@ -86,7 +87,7 @@ const AboutSection = () => {
         {/* TOPICS WE'LL COVER section */}
         <div className="mt-12">
           <div className="comic-panel bg-comic-white relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
-            <div className="absolute -top-4 left-1/2 -translate-x-1/2 h-28 w-28 md:h-32 md:w-32 bg-comic-yellow rounded-full flex items-center justify-center shadow-lg z-10">
+            <div className="absolute -top-6 left-1/2 -translate-x-1/2 h-28 w-28 md:h-32 md:w-32 bg-comic-yellow rounded-full flex items-center justify-center shadow-lg z-10">
               <span className="font-bangers text-comic-black text-2xl md:text-3xl text-center">💬 TOPICS</span>
             </div>
             <div className="pt-20 px-6 md:px-8 pb-6 md:pb-8">
