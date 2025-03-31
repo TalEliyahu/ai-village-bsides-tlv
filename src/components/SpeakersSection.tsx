@@ -1,13 +1,11 @@
 
 import React from 'react';
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useIsMobile } from "@/hooks/use-mobile";
 
 type Speaker = {
   name: string;
   title: string;
   organization: string;
-  bio: string;
   placeholder: string;
   confirmed: boolean;
 };
@@ -20,7 +18,6 @@ const SpeakersSection = () => {
       name: "Daniel Liezrowice",
       title: "CEO and Co-Founder",
       organization: "Engineering Software Lab (ESL)",
-      bio: "Expert in AI security vulnerabilities",
       placeholder: "DL",
       confirmed: true
     },
@@ -28,7 +25,6 @@ const SpeakersSection = () => {
       name: "Alex Polyakov",
       title: "Co-Founder and CEO",
       organization: "Adversa AI",
-      bio: "Specialist in model manipulation prevention",
       placeholder: "AP",
       confirmed: true
     },
@@ -36,7 +32,6 @@ const SpeakersSection = () => {
       name: "Vitaly Simonovich",
       title: "Threat Intelligence Researcher",
       organization: "Cato Networks",
-      bio: "Focused on adversarial machine learning",
       placeholder: "VS",
       confirmed: true
     },
@@ -44,7 +39,6 @@ const SpeakersSection = () => {
       name: "Itamar Golan",
       title: "CEO and Co-Founder",
       organization: "Prompt Security",
-      bio: "Works on securing machine learning pipelines",
       placeholder: "IG",
       confirmed: true
     },
@@ -52,7 +46,6 @@ const SpeakersSection = () => {
       name: "Dor Amit",
       title: "Co-Founder",
       organization: "10root Cyber Security",
-      bio: "Expertise in data poisoning prevention",
       placeholder: "DA",
       confirmed: true
     },
@@ -60,7 +53,6 @@ const SpeakersSection = () => {
       name: "Elli Shlomo",
       title: "Head of Security Research",
       organization: "Guardz",
-      bio: "Specializing in ethical AI implementations",
       placeholder: "ES",
       confirmed: true
     },
@@ -68,7 +60,6 @@ const SpeakersSection = () => {
       name: "Ran Dubin",
       title: "CTO and Senior Lecturer",
       organization: "BUFFERZONE Security and Ariel University",
-      bio: "Focused on robustness and reliability of AI",
       placeholder: "RD",
       confirmed: true
     },
@@ -76,7 +67,6 @@ const SpeakersSection = () => {
       name: "Tal Skverer",
       title: "Head of Research",
       organization: "Astrix Security",
-      bio: "Expert in building secure AI infrastructure",
       placeholder: "TS",
       confirmed: true
     },
@@ -84,7 +74,6 @@ const SpeakersSection = () => {
       name: "Ziv Karliner",
       title: "Co-Founder and CTO",
       organization: "Pillar Security",
-      bio: "Specialist in AI threat detection",
       placeholder: "ZK",
       confirmed: true
     },
@@ -92,7 +81,6 @@ const SpeakersSection = () => {
       name: "Speaker TBA",
       title: "Security Researcher",
       organization: "To Be Announced",
-      bio: "Details to be announced",
       placeholder: "?",
       confirmed: false
     }
@@ -124,7 +112,6 @@ const SpeakersSection = () => {
                   <h3 className="font-bangers text-xl md:text-2xl text-comic-black">{speaker.name}</h3>
                   <p className="text-sm font-bold text-comic-red mb-1">{speaker.title} @ {speaker.organization}</p>
                   <div className="h-0.5 w-12 bg-comic-black mb-2"></div>
-                  <p className={`font-comic text-xs md:text-sm text-gray-700 ${isMobile ? "line-clamp-2" : ""}`}>{speaker.bio}</p>
                 </div>
                 
                 {!speaker.confirmed && (
