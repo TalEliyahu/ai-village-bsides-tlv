@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 type Speaker = {
   name: string;
@@ -13,60 +14,76 @@ type Speaker = {
 const SpeakersSection = () => {
   const speakers: Speaker[] = [
     {
-      name: "Dr. Sarah Chen",
-      title: "Chief AI Security Researcher",
-      organization: "SecureAI Labs",
-      bio: "Pioneer in adversarial machine learning",
-      placeholder: "SC",
+      name: "Daniel Liezrowice",
+      title: "Security Researcher",
+      organization: "AI Security",
+      bio: "Expert in AI security vulnerabilities",
+      placeholder: "DL",
       confirmed: true
     },
     {
-      name: "Alex Mercer",
-      title: "Red Team Lead",
-      organization: "CyberForce One",
-      bio: "Expert in model exploitation techniques",
-      placeholder: "AM",
+      name: "Alex Polyakov",
+      title: "AI Security Expert",
+      organization: "Neural Guard",
+      bio: "Specialist in model manipulation prevention",
+      placeholder: "AP",
       confirmed: true
     },
     {
-      name: "Maya Williams",
-      title: "Security Engineer",
-      organization: "TechSecure",
-      bio: "Specialist in AI robustness testing",
-      placeholder: "MW",
+      name: "Vitaly Simonovich",
+      title: "Cyber Security Researcher",
+      organization: "DefenseAI",
+      bio: "Focused on adversarial machine learning",
+      placeholder: "VS",
       confirmed: true
     },
     {
-      name: "David Cohen",
-      title: "Ethical Hacker",
-      organization: "BreakPoint Security",
-      bio: "LLM security researcher and bug hunter",
-      placeholder: "DC",
+      name: "Itamar Golan",
+      title: "ML Security Engineer",
+      organization: "SecureNet Labs",
+      bio: "Works on securing machine learning pipelines",
+      placeholder: "IG",
       confirmed: true
     },
     {
-      name: "Olivia Parker",
+      name: "Dor Amit",
+      title: "Data Security Researcher",
+      organization: "AI Trust",
+      bio: "Expertise in data poisoning prevention",
+      placeholder: "DA",
+      confirmed: true
+    },
+    {
+      name: "Elli Shlomo",
       title: "AI Ethics Researcher",
-      organization: "Tech University",
-      bio: "Focuses on fairness and bias in ML systems",
-      placeholder: "OP",
+      organization: "Ethical AI Institute",
+      bio: "Specializing in ethical AI implementations",
+      placeholder: "ES",
       confirmed: true
     },
     {
-      name: "James Wilson",
-      title: "Security Architect",
-      organization: "AI Defense Inc.",
-      bio: "Expert in securing production AI systems",
-      placeholder: "JW",
+      name: "Ran Dubin",
+      title: "Security Engineer",
+      organization: "AIDefend",
+      bio: "Focused on robustness and reliability of AI",
+      placeholder: "RD",
       confirmed: true
     },
     {
-      name: "Speaker TBA",
-      title: "Coming Soon",
-      organization: "",
-      bio: "Details to be announced",
-      placeholder: "?",
-      confirmed: false
+      name: "Tal Skverer",
+      title: "AI Systems Architect",
+      organization: "SecureMind",
+      bio: "Expert in building secure AI infrastructure",
+      placeholder: "TS",
+      confirmed: true
+    },
+    {
+      name: "Ziv Karliner",
+      title: "Security Researcher",
+      organization: "Defensive Systems",
+      bio: "Specialist in AI threat detection",
+      placeholder: "ZK",
+      confirmed: true
     },
     {
       name: "Speaker TBA",
@@ -89,7 +106,7 @@ const SpeakersSection = () => {
         </div>
         
         {/* Speakers grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {speakers.map((speaker, index) => (
             <div 
               key={index} 
