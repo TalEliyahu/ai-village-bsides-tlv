@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
+import WhyAttendSection from '@/components/WhyAttendSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
@@ -12,6 +13,7 @@ const Index = () => {
     <main className="min-h-screen overflow-x-hidden">
       <HeroSection />
       <AboutSection />
+      <WhyAttendSection />
       <ScheduleSection />
       <SpeakersSection />
       <Footer />
