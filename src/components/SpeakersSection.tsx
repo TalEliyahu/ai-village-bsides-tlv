@@ -90,8 +90,8 @@ const SpeakersSection = () => {
     },
     {
       name: "Speaker TBA",
-      title: "Coming Soon",
-      organization: "",
+      title: "Security Researcher",
+      organization: "To Be Announced",
       bio: "Details to be announced",
       placeholder: "?",
       confirmed: false
