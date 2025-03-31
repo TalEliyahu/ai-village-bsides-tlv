@@ -22,7 +22,7 @@ const SpeakersSection = () => {
       organization: "Engineering Software Lab (ESL)",
       placeholder: "DL",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/daniel-liezrowice"
+      linkedinUrl: "https://www.linkedin.com/in/liezrowice/"
     },
     {
       name: "Alex Polyakov",
@@ -30,7 +30,7 @@ const SpeakersSection = () => {
       organization: "Adversa AI",
       placeholder: "AP",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/alex-polyakov"
+      linkedinUrl: "https://www.linkedin.com/in/alex-polyakov-cyber/"
     },
     {
       name: "Vitaly Simonovich",
@@ -38,7 +38,7 @@ const SpeakersSection = () => {
       organization: "Cato Networks",
       placeholder: "VS",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/vitaly-simonovich"
+      linkedinUrl: "https://www.linkedin.com/in/vitalysimonovich/"
     },
     {
       name: "Itamar Golan",
@@ -46,7 +46,7 @@ const SpeakersSection = () => {
       organization: "Prompt Security",
       placeholder: "IG",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/itamar-golan"
+      linkedinUrl: "https://www.linkedin.com/in/itamar-g1/"
     },
     {
       name: "Dor Amit",
@@ -54,7 +54,7 @@ const SpeakersSection = () => {
       organization: "10root Cyber Security",
       placeholder: "DA",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/dor-amit"
+      linkedinUrl: "https://www.linkedin.com/in/dor-amit-7791397/"
     },
     {
       name: "Elli Shlomo",
@@ -62,7 +62,7 @@ const SpeakersSection = () => {
       organization: "Guardz",
       placeholder: "ES",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/elli-shlomo"
+      linkedinUrl: "https://www.linkedin.com/in/elishlomo/"
     },
     {
       name: "Ran Dubin",
@@ -70,7 +70,7 @@ const SpeakersSection = () => {
       organization: "BUFFERZONE Security and Ariel University",
       placeholder: "RD",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/ran-dubin"
+      linkedinUrl: "https://www.linkedin.com/in/dubinran/"
     },
     {
       name: "Tal Skverer",
@@ -78,7 +78,7 @@ const SpeakersSection = () => {
       organization: "Astrix Security",
       placeholder: "TS",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/tal-skverer"
+      linkedinUrl: "https://www.linkedin.com/in/reverser/"
     },
     {
       name: "Ziv Karliner",
@@ -86,7 +86,7 @@ const SpeakersSection = () => {
       organization: "Pillar Security",
       placeholder: "ZK",
       confirmed: true,
-      linkedinUrl: "https://linkedin.com/in/ziv-karliner"
+      linkedinUrl: "https://www.linkedin.com/in/ziv-karliner-72629893/"
     },
     {
       name: "Speaker TBA",
