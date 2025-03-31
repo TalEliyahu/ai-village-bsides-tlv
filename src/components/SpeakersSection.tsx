@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Linkedin } from "lucide-react";
@@ -57,7 +56,8 @@ const SpeakersSection = () => {
       organization: "10root Cyber Security",
       placeholder: "DA",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/dor-amit-7791397/"
+      linkedinUrl: "https://www.linkedin.com/in/dor-amit-7791397/",
+      imageUrl: "/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png"
     },
     {
       name: "Elli Shlomo",
