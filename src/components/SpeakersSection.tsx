@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Linkedin } from "lucide-react";
 
 type Speaker = {
   name: string;
@@ -8,6 +9,7 @@ type Speaker = {
   organization: string;
   placeholder: string;
   confirmed: boolean;
+  linkedinUrl?: string; // Optional LinkedIn profile URL
 };
 
 const SpeakersSection = () => {
@@ -19,63 +21,72 @@ const SpeakersSection = () => {
       title: "CEO and Co-Founder",
       organization: "Engineering Software Lab (ESL)",
       placeholder: "DL",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/daniel-liezrowice"
     },
     {
       name: "Alex Polyakov",
       title: "Co-Founder and CEO",
       organization: "Adversa AI",
       placeholder: "AP",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/alex-polyakov"
     },
     {
       name: "Vitaly Simonovich",
       title: "Threat Intelligence Researcher",
       organization: "Cato Networks",
       placeholder: "VS",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/vitaly-simonovich"
     },
     {
       name: "Itamar Golan",
       title: "CEO and Co-Founder",
       organization: "Prompt Security",
       placeholder: "IG",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/itamar-golan"
     },
     {
       name: "Dor Amit",
       title: "Co-Founder",
       organization: "10root Cyber Security",
       placeholder: "DA",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/dor-amit"
     },
     {
       name: "Elli Shlomo",
       title: "Head of Security Research",
       organization: "Guardz",
       placeholder: "ES",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/elli-shlomo"
     },
     {
       name: "Ran Dubin",
       title: "CTO and Senior Lecturer",
       organization: "BUFFERZONE Security and Ariel University",
       placeholder: "RD",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/ran-dubin"
     },
     {
       name: "Tal Skverer",
       title: "Head of Research",
       organization: "Astrix Security",
       placeholder: "TS",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/tal-skverer"
     },
     {
       name: "Ziv Karliner",
       title: "Co-Founder and CTO",
       organization: "Pillar Security",
       placeholder: "ZK",
-      confirmed: true
+      confirmed: true,
+      linkedinUrl: "https://linkedin.com/in/ziv-karliner"
     },
     {
       name: "Speaker TBA",
@@ -109,7 +120,20 @@ const SpeakersSection = () => {
                 </div>
                 
                 <div className="p-4 bg-white">
-                  <h3 className="font-bangers text-xl md:text-2xl text-comic-black">{speaker.name}</h3>
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bangers text-xl md:text-2xl text-comic-black">{speaker.name}</h3>
+                    {speaker.linkedinUrl && (
+                      <a 
+                        href={speaker.linkedinUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-comic-blue hover:text-comic-red transition-colors"
+                        aria-label={`${speaker.name}'s LinkedIn profile`}
+                      >
+                        <Linkedin size={20} />
+                      </a>
+                    )}
+                  </div>
                   <p className="text-sm font-bold text-comic-red mb-1">{speaker.title} @ {speaker.organization}</p>
                   <div className="h-0.5 w-12 bg-comic-black mb-2"></div>
                 </div>
