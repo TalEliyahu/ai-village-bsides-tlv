@@ -70,7 +70,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* WHO SHOULD JOIN section - Text-based with comic styling */}
+        {/* WHO SHOULD JOIN section - Single paragraph format */}
         <div className="mt-12">
           <div className="comic-panel bg-comic-yellow relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 border-4 border-comic-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.8)]">
             <div className="bg-comic-red py-3 text-center mb-4">
@@ -78,17 +78,8 @@ const AboutSection = () => {
             </div>
             <div className="px-6 md:px-8 pb-6 md:pb-8">
               <div className="p-6 rounded-lg bg-comic-white border-2 border-comic-black">
-                <p className="text-comic-black font-comic text-xl md:text-2xl leading-relaxed text-center">
-                  If you're curious about how AI systems break — and how to secure them — you belong here!
-                </p>
-                <p className="text-comic-black font-comic text-xl leading-relaxed mt-4">
-                  <span className="font-bold text-comic-red">Security Researchers</span> investigating new attack vectors, 
-                  <span className="font-bold text-comic-blue"> AI Practitioners</span> building safer systems, 
-                  <span className="font-bold text-comic-yellow"> Policy Specialists</span> shaping governance frameworks, and 
-                  <span className="font-bold" style={{color: "#6E59A5"}}> Hackers</span> at heart who love to break things — all are welcome in the Village!
-                </p>
-                <p className="text-comic-black font-comic text-xl leading-relaxed mt-4 text-center font-bold animate-pulse">
-                  Join us to engage, share, and learn how to build more secure AI systems!
+                <p className="text-comic-black font-comic text-xl leading-relaxed">
+                  If you're curious about how AI systems break — and how to secure them — you belong here! Security Researchers investigating new attack vectors, AI Practitioners building safer systems, Policy Specialists shaping governance frameworks, and Hackers at heart who love to break things — all are welcome in the Village! Join us to engage, share, and learn how to build more secure AI systems!
                 </p>
               </div>
             </div>
