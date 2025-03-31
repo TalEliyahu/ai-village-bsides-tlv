@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { CheckCircle } from 'lucide-react';
@@ -78,7 +79,7 @@ const AboutSection = () => {
             <div className="px-6 md:px-8 pb-6 md:pb-8">
               <div className="p-6 rounded-lg bg-comic-white border-2 border-comic-black">
                 <p className="text-comic-black font-comic text-xl leading-relaxed">
-                  If you're curious about how AI systems break — and how to secure them — you belong here!
+                  If you're curious about how AI systems break — and how to secure them — you belong here. Whether you're a security researcher, AI practitioner, policy wonk, or hacker at heart, the AI Village is your space to engage, share, and learn.
                 </p>
               </div>
             </div>
