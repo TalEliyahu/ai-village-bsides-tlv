@@ -70,14 +70,37 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* WHO SHOULD JOIN section - Simplified */}
+        {/* WHO SHOULD JOIN section - Updated to match comic theme */}
         <div className="mt-12">
-          <div className="comic-panel bg-comic-red relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 border-4 border-comic-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.8)]">
-            <div className="pt-8 px-6 md:px-8 pb-6 md:pb-8">
-              <h3 className="font-bangers text-3xl md:text-4xl text-white mb-6 text-center comic-text-stroke">WHO SHOULD JOIN?</h3>
-              <div className="bg-comic-black/30 p-6 rounded-lg backdrop-blur-sm border-2 border-white/30">
-                <p className="text-white font-comic text-xl md:text-2xl leading-relaxed text-center font-bold">
-                  If you're curious about how AI systems break — and how to secure them — you belong here. Whether you're a security researcher, AI practitioner, policy wonk, or hacker at heart, the AI Village is your space to engage, share, and learn.
+          <div className="comic-panel bg-comic-yellow relative overflow-hidden transform hover:scale-[1.02] transition-transform duration-300 border-4 border-comic-black shadow-[8px_8px_0px_0px_rgba(0,0,0,0.8)]">
+            <div className="bg-comic-red py-3 text-center mb-4">
+              <h3 className="font-bangers text-3xl md:text-4xl text-white comic-text-stroke">👥 WHO SHOULD JOIN?</h3>
+            </div>
+            <div className="px-6 md:px-8 pb-6 md:pb-8">
+              <div className="p-6 rounded-lg bg-comic-white border-2 border-comic-black">
+                <p className="text-comic-black font-comic text-xl md:text-2xl leading-relaxed text-center font-bold">
+                  If you're curious about how AI systems break — and how to secure them — you belong here. Whether you're a:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                  <div className="flex items-center bg-comic-blue/20 p-3 rounded-lg border-2 border-comic-blue transform rotate-[-1deg]">
+                    <span className="font-bangers text-2xl mr-2">🔐</span>
+                    <span className="font-comic text-lg font-bold">Security Researcher</span>
+                  </div>
+                  <div className="flex items-center bg-comic-red/20 p-3 rounded-lg border-2 border-comic-red transform rotate-[1deg]">
+                    <span className="font-bangers text-2xl mr-2">🧠</span>
+                    <span className="font-comic text-lg font-bold">AI Practitioner</span>
+                  </div>
+                  <div className="flex items-center bg-comic-yellow/40 p-3 rounded-lg border-2 border-comic-yellow transform rotate-[1deg]">
+                    <span className="font-bangers text-2xl mr-2">📝</span>
+                    <span className="font-comic text-lg font-bold">Policy Specialist</span>
+                  </div>
+                  <div className="flex items-center bg-comic-blue/20 p-3 rounded-lg border-2 border-comic-blue transform rotate-[-1deg]">
+                    <span className="font-bangers text-2xl mr-2">💻</span>
+                    <span className="font-comic text-lg font-bold">Hacker at Heart</span>
+                  </div>
+                </div>
+                <p className="text-comic-black font-comic text-xl leading-relaxed text-center mt-6 font-bold">
+                  The AI Village is your space to engage, share, and learn!
                 </p>
               </div>
             </div>
