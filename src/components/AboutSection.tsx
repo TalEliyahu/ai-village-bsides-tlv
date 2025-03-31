@@ -13,46 +13,50 @@ const AboutSection = () => {
         </div>
         
         {/* Main content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="comic-panel bg-comic-white relative overflow-hidden">
-            <div className="absolute -top-6 -left-6 h-24 w-24 bg-comic-red rounded-full flex items-center justify-center transform rotate-12">
-              <span className="font-bangers text-white text-2xl transform -rotate-12">🔍 WHAT</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* WHAT section */}
+          <div className="comic-panel bg-comic-white relative overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-6 -left-6 h-28 w-28 bg-comic-red rounded-full flex items-center justify-center transform rotate-12 shadow-lg">
+              <span className="font-bangers text-white text-3xl transform -rotate-12">🔍 WHAT</span>
             </div>
-            <div className="pt-10 pl-10">
-              <p className="text-comic-black font-comic text-lg">
+            <div className="pt-16 px-8 pb-8">
+              <p className="text-comic-black font-comic text-xl leading-relaxed">
                 The AI Village is a focused track at <span className="font-bold text-comic-red">BSides TLV</span> exploring the security implications of artificial intelligence. Through technical talks and expert discussions, we dive into topics like adversarial attacks, model red teaming, data poisoning, and the real-world risks of deploying AI in security-critical environments.
               </p>
             </div>
           </div>
           
-          <div className="comic-panel bg-comic-yellow relative overflow-hidden">
-            <div className="absolute -top-6 -right-6 h-24 w-24 bg-comic-blue rounded-full flex items-center justify-center transform -rotate-12">
-              <span className="font-bangers text-white text-2xl transform rotate-12">❓ WHY</span>
+          {/* WHY section */}
+          <div className="comic-panel bg-comic-yellow relative overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-6 -right-6 h-28 w-28 bg-comic-blue rounded-full flex items-center justify-center transform -rotate-12 shadow-lg">
+              <span className="font-bangers text-white text-3xl transform rotate-12">❓ WHY</span>
             </div>
-            <div className="pt-10 pr-10">
-              <p className="text-comic-black font-comic text-lg">
+            <div className="pt-16 px-8 pb-8">
+              <p className="text-comic-black font-comic text-xl leading-relaxed">
                 As AI systems are rapidly adopted across sectors—from infrastructure and finance to national security—they introduce new and often poorly understood vulnerabilities. The AI Village brings together people who can break, test, and defend these systems—sharing tools, techniques, and insights that help the wider community secure AI in practice, not just in theory.
               </p>
             </div>
           </div>
 
-          <div className="comic-panel bg-comic-blue relative overflow-hidden">
-            <div className="absolute -top-6 -left-6 h-24 w-24 bg-comic-red rounded-full flex items-center justify-center transform rotate-12">
-              <span className="font-bangers text-white text-2xl transform -rotate-12">🎯 MISSION</span>
+          {/* MISSION section */}
+          <div className="comic-panel bg-comic-blue relative overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-6 -left-6 h-28 w-28 bg-comic-red rounded-full flex items-center justify-center transform rotate-12 shadow-lg">
+              <span className="font-bangers text-white text-3xl transform -rotate-12">🎯 MISSION</span>
             </div>
-            <div className="pt-10 pl-10">
-              <p className="text-comic-black font-comic text-lg">
+            <div className="pt-16 px-8 pb-8">
+              <p className="text-comic-black font-comic text-xl leading-relaxed">
                 To grow a hands-on, technically minded community in Israel focused on the safe and secure use of AI. We aim to bridge the gap between AI developers and security professionals by encouraging research, collaboration, and open discussion.
               </p>
             </div>
           </div>
           
-          <div className="comic-panel bg-comic-white relative overflow-hidden">
-            <div className="absolute -top-6 -right-6 h-24 w-24 bg-comic-yellow rounded-full flex items-center justify-center transform -rotate-12">
-              <span className="font-bangers text-white text-2xl transform rotate-12">🌟 VISION</span>
+          {/* VISION section */}
+          <div className="comic-panel bg-comic-white relative overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <div className="absolute -top-6 -right-6 h-28 w-28 bg-comic-yellow rounded-full flex items-center justify-center transform -rotate-12 shadow-lg">
+              <span className="font-bangers text-white text-3xl transform rotate-12">🌟 VISION</span>
             </div>
-            <div className="pt-10 pr-10">
-              <p className="text-comic-black font-comic text-lg">
+            <div className="pt-16 px-8 pb-8">
+              <p className="text-comic-black font-comic text-xl leading-relaxed">
                 A future where AI systems are built and deployed with security in mind—challenged and validated by people who understand how they can be manipulated, exploited, or fail in the real world.
               </p>
             </div>
