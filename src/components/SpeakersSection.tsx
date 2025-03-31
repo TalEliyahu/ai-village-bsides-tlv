@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Linkedin } from "lucide-react";
@@ -49,7 +50,8 @@ const SpeakersSection = () => {
       organization: "Prompt Security",
       placeholder: "IG",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/itamar-g1/"
+      linkedinUrl: "https://www.linkedin.com/in/itamar-g1/",
+      imageUrl: "/lovable-uploads/5acc5d46-6fe6-4b4c-8ec8-2e9088cf000f.png"
     },
     {
       name: "Dor Amit",
