@@ -122,8 +122,7 @@ const SpeakersSection = () => {
                 
                 <div className="p-4 bg-white">
                   <h3 className="font-bangers text-xl md:text-2xl text-comic-black">{speaker.name}</h3>
-                  <p className="text-sm font-bold text-comic-red mb-1">{speaker.title}</p>
-                  <p className="text-xs mb-2">{speaker.organization}</p>
+                  <p className="text-sm font-bold text-comic-red mb-1">{speaker.title} @ {speaker.organization}</p>
                   <div className="h-0.5 w-12 bg-comic-black mb-2"></div>
                   <p className={`font-comic text-xs md:text-sm text-gray-700 ${isMobile ? "line-clamp-2" : ""}`}>{speaker.bio}</p>
                 </div>
