@@ -11,6 +11,8 @@ const Index = () => {
   return (
     <main className="min-h-screen overflow-x-hidden">
       <HeroSection />
+      {/* Reduced spacing between hero and about section */}
+      <div className="-mt-16 md:-mt-20"></div>
       <AboutSection />
       <ScheduleSection />
       <SpeakersSection />
