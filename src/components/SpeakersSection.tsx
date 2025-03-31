@@ -40,7 +40,8 @@ const SpeakersSection = () => {
       organization: "Cato Networks",
       placeholder: "VS",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/vitalysimonovich/"
+      linkedinUrl: "https://www.linkedin.com/in/vitalysimonovich/",
+      imageUrl: "/lovable-uploads/f4a226ff-8a0e-45d1-bb60-aaf51198f457.png"
     },
     {
       name: "Itamar Golan",
