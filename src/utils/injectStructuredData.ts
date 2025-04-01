@@ -35,9 +35,9 @@ const ensureSocialMediaPreviewTags = () => {
   // Define the high-quality image URL - use absolute URL for better compatibility
   // Add a cache-busting parameter to force fresh image load
   const timestamp = new Date().getTime();
-  // For WhatsApp and Telegram, static URL works better than one with parameters
+  // For WhatsApp, Telegram, LinkedIn and similar platforms, static URL works better
   const staticImageUrl = 'https://aivillagetlv.com/Social.png';
-  // Use timestamp for other platforms that might cache aggressively
+  // Use timestamp for platforms that might cache aggressively
   const highQualityImageUrl = `https://aivillagetlv.com/Social.png?t=${timestamp}`;
   
   // Array of social media meta properties to check and update
@@ -57,19 +57,33 @@ const ensureSocialMediaPreviewTags = () => {
     { property: 'og:site_name', content: 'AI Village @ BSides TLV' },
     { property: 'og:url', content: 'https://aivillagetlv.com/' },
     
-    // Twitter-specific tags - critically important for Twitter cards
+    // Twitter-specific tags
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:site', content: '@bsidestlv' },
     { name: 'twitter:creator', content: '@bsidestlv' },
     { name: 'twitter:image', content: highQualityImageUrl },
-    { name: 'twitter:image:src', content: highQualityImageUrl }, // Additional Twitter image property
+    { name: 'twitter:image:src', content: highQualityImageUrl }, 
     { name: 'twitter:title', content: 'AI Village @ BSides TLV 2025' },
     { name: 'twitter:description', content: 'AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.' },
     { name: 'twitter:image:alt', content: 'AI Village @ BSides TLV 2025 logo' },
     
     // Telegram-specific tags
     { name: 'telegram:image', content: staticImageUrl },
-    { name: 'telegram:channel', content: '@bsidestlv' }
+    { name: 'telegram:channel', content: '@bsidestlv' },
+    
+    // LinkedIn-specific tags
+    { property: 'linkedin:image', content: staticImageUrl },
+    { property: 'linkedin:card', content: 'summary_large_image' },
+    { property: 'linkedin:title', content: 'AI Village @ BSides TLV 2025' },
+    { property: 'linkedin:description', content: 'AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.' },
+    
+    // Facebook app ID for enhanced integration
+    { property: 'fb:app_id', content: 'your_fb_app_id' },
+    
+    // Pinterest-specific tags
+    { name: 'pinterest-rich-pin', content: 'true' },
+    { name: 'pinterest:image', content: staticImageUrl },
+    { name: 'pinterest:description', content: 'AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.' }
   ];
   
   // Ensure each meta tag exists and has the correct value
@@ -96,7 +110,7 @@ const ensureSocialMediaPreviewTags = () => {
     metaTag.setAttribute('content', tag.content);
   });
   
-  // Add a preload hint for the image - important for WhatsApp and Telegram
+  // Add a preload hint for the image - important for all social platforms
   const imageUrl = 'https://aivillagetlv.com/Social.png';
   const preloadLink = document.querySelector(`link[rel="preload"][href="${imageUrl}"]`);
   if (!preloadLink) {

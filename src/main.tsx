@@ -11,24 +11,29 @@ injectStructuredData();
 window.addEventListener('load', () => {
   injectStructuredData();
   
-  // Additional injection with delay to ensure social media tags are present
-  // This can help with platforms that parse the page after initial load
+  // Injection with delay for general social media platforms
   setTimeout(() => {
     injectStructuredData();
-    console.log('Delayed structured data injection completed');
+    console.log('Delayed structured data injection completed for general platforms');
   }, 2000);
   
-  // Extra delayed injection specifically for WhatsApp and Telegram which may need more time
+  // Delayed injection for WhatsApp, Telegram, and LinkedIn
   setTimeout(() => {
     injectStructuredData();
-    console.log('Extended delay structured data injection for WhatsApp and Telegram completed');
+    console.log('Extended delay structured data injection for WhatsApp, Telegram, and LinkedIn completed');
   }, 5000);
   
-  // Final attempt for Telegram which sometimes needs even more time
+  // Final attempt for slower platforms like Telegram and some LinkedIn previews
   setTimeout(() => {
     injectStructuredData();
-    console.log('Final injection attempt for Telegram completed');
+    console.log('Final injection attempt for slower social platforms completed');
   }, 8000);
+  
+  // Ultra-delayed injection for the most stubborn platforms
+  setTimeout(() => {
+    injectStructuredData();
+    console.log('Ultra-delayed final attempt for extremely slow social platforms');
+  }, 12000);
 });
 
 createRoot(document.getElementById("root")!).render(<App />);
