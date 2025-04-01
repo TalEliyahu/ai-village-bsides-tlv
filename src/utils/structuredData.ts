@@ -24,7 +24,7 @@ export const generateEventStructuredData = () => {
         "longitude": "34.8044"
       }
     },
-    "image": "https://aivillagetlv.com/lovable-uploads/e68b54a4-7599-4310-909c-7c7ee969c3d9.png",
+    "image": "https://aivillagetlv.com/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png",
     "offers": {
       "@type": "Offer",
       "url": "https://aivillagetlv.com/",
