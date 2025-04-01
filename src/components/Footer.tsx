@@ -21,10 +21,6 @@ const Footer = () => {
           </div>
         </div>
         
-        <p className="text-gray-400 font-comic text-sm sm:text-base mb-2">
-          Part of BSides TLV 2025 - The premier cybersecurity community conference in Israel
-        </p>
-        
         <p className="text-gray-600 text-xs sm:text-sm font-comic">
           © 2025 The AI Village @ BSides TLV. All rights reserved.
         </p>
