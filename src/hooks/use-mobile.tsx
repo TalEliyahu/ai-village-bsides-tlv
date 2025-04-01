@@ -5,6 +5,9 @@ export function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Check if window is available (client-side)
+    if (typeof window === 'undefined') return;
+    
     // Initial check
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -12,13 +15,15 @@ export function useIsMobile() {
     
     checkIfMobile();
     
-    // Throttle the resize event to improve performance
-    let resizeTimer: number;
+    // Use a throttled resize handler for better performance
+    let resizeTimer: ReturnType<typeof setTimeout>;
     const handleResize = () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = window.setTimeout(() => {
-        checkIfMobile();
-      }, 100);
+      if (!resizeTimer) {
+        resizeTimer = setTimeout(() => {
+          checkIfMobile();
+          resizeTimer = 0;
+        }, 100);
+      }
     };
 
     window.addEventListener('resize', handleResize);
@@ -26,7 +31,7 @@ export function useIsMobile() {
     // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize);
-      clearTimeout(resizeTimer);
+      if (resizeTimer) clearTimeout(resizeTimer);
     };
   }, []);
 
