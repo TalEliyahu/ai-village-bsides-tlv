@@ -73,6 +73,7 @@ const ScheduleSection = () => {
         `}
       >
         <TableCell className="py-4 px-4 font-comic font-bold whitespace-nowrap text-comic-black">{item.time}</TableCell>
+        <TableCell className="py-4 px-4 font-comic text-comic-black">{item.speaker}</TableCell>
         <TableCell className="py-4 px-4 font-comic text-comic-black">
           <div className="flex items-center gap-2">
             {item.type === 'break' && <Coffee size={16} className="text-gray-500" />}
@@ -87,7 +88,6 @@ const ScheduleSection = () => {
             )}
           </div>
         </TableCell>
-        <TableCell className="py-4 px-4 font-comic text-comic-black">{item.speaker}</TableCell>
         <TableCell className="py-4 px-4 font-comic text-right text-comic-black">{item.duration}</TableCell>
       </TableRow>
     ));
@@ -125,8 +125,8 @@ const ScheduleSection = () => {
               <TableHeader>
                 <TableRow className="bg-comic-black text-white">
                   <TableHead className="py-4 px-4 font-bangers text-xl">TIME</TableHead>
-                  <TableHead className="py-4 px-4 font-bangers text-xl">SESSION</TableHead>
                   <TableHead className="py-4 px-4 font-bangers text-xl">SPEAKER</TableHead>
+                  <TableHead className="py-4 px-4 font-bangers text-xl">SESSION</TableHead>
                   <TableHead className="py-4 px-4 font-bangers text-xl text-right">DURATION</TableHead>
                 </TableRow>
               </TableHeader>
@@ -183,8 +183,8 @@ const ScheduleSection = () => {
               <TableHeader>
                 <TableRow className="bg-comic-black text-white">
                   <TableHead className="py-4 px-4 font-bangers text-xl">TIME</TableHead>
-                  <TableHead className="py-4 px-4 font-bangers text-xl">SESSION</TableHead>
                   <TableHead className="py-4 px-4 font-bangers text-xl">SPEAKER</TableHead>
+                  <TableHead className="py-4 px-4 font-bangers text-xl">SESSION</TableHead>
                   <TableHead className="py-4 px-4 font-bangers text-xl text-right">DURATION</TableHead>
                 </TableRow>
               </TableHeader>
