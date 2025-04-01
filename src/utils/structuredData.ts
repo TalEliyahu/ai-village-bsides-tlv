@@ -25,7 +25,7 @@ export const generateEventStructuredData = () => {
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://raw.githubusercontent.com/TalEliyahu/ai-village-bsides-tlv/main/public/Social.png",
+      "url": "https://aivillagetlv.com/Social.png",
       "width": "1200",
       "height": "630",
       "encodingFormat": "image/png"
@@ -143,14 +143,14 @@ export const generateOrganizationStructuredData = () => {
     "url": "https://aivillagetlv.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://raw.githubusercontent.com/TalEliyahu/ai-village-bsides-tlv/main/public/Social.png",
+      "url": "https://aivillagetlv.com/Social.png",
       "width": "1200",
       "height": "630",
       "encodingFormat": "image/png"
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://raw.githubusercontent.com/TalEliyahu/ai-village-bsides-tlv/main/public/Social.png",
+      "url": "https://aivillagetlv.com/Social.png",
       "width": "1200",
       "height": "630",
       "encodingFormat": "image/png"

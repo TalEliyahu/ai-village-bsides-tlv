@@ -28,9 +28,9 @@ export const injectStructuredData = () => {
 const ensureWhatsAppPreviewTags = () => {
   // Array of WhatsApp-specific meta properties to check and update
   const whatsAppMetaTags = [
-    { property: 'og:image:url', content: 'https://raw.githubusercontent.com/TalEliyahu/ai-village-bsides-tlv/main/public/Social.png' },
-    { property: 'og:image', content: 'https://raw.githubusercontent.com/TalEliyahu/ai-village-bsides-tlv/main/public/Social.png' },
-    { property: 'og:image:secure_url', content: 'https://raw.githubusercontent.com/TalEliyahu/ai-village-bsides-tlv/main/public/Social.png' },
+    { property: 'og:image:url', content: 'https://aivillagetlv.com/Social.png' },
+    { property: 'og:image', content: 'https://aivillagetlv.com/Social.png' },
+    { property: 'og:image:secure_url', content: 'https://aivillagetlv.com/Social.png' },
     { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
