@@ -1,4 +1,8 @@
+
 export const generateEventStructuredData = () => {
+  // Add timestamp to image URL to prevent caching issues
+  const imageUrl = `https://aivillagetlv.com/Social.png?t=${new Date().getTime()}`;
+  
   return {
     "@context": "https://schema.org",
     "@type": "Event",
@@ -25,7 +29,7 @@ export const generateEventStructuredData = () => {
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://aivillagetlv.com/Social.png",
+      "url": imageUrl,
       "width": "1200",
       "height": "630",
       "encodingFormat": "image/png"
@@ -136,6 +140,9 @@ export const generateFAQStructuredData = () => {
 };
 
 export const generateOrganizationStructuredData = () => {
+  // Add timestamp to image URL to prevent caching issues
+  const imageUrl = `https://aivillagetlv.com/Social.png?t=${new Date().getTime()}`;
+  
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -143,14 +150,14 @@ export const generateOrganizationStructuredData = () => {
     "url": "https://aivillagetlv.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://aivillagetlv.com/Social.png",
+      "url": imageUrl,
       "width": "1200",
       "height": "630",
       "encodingFormat": "image/png"
     },
     "image": {
       "@type": "ImageObject",
-      "url": "https://aivillagetlv.com/Social.png",
+      "url": imageUrl,
       "width": "1200",
       "height": "630",
       "encodingFormat": "image/png"

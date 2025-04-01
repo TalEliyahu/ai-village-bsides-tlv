@@ -20,34 +20,47 @@ export const injectStructuredData = () => {
     document.head.appendChild(script);
   });
   
-  // Force the preview image for WhatsApp and other social media by adding direct meta tags
+  // Force the preview image for social media platforms
   ensureSocialMediaPreviewTags();
+  
+  // Set a timeout to reinject tags after 1 second
+  // This can help with some platforms that might strip dynamically added tags
+  setTimeout(() => {
+    ensureSocialMediaPreviewTags();
+  }, 1000);
 };
 
-// Enhanced helper function to ensure WhatsApp and other social media preview tags
+// Enhanced helper function to ensure all social media preview tags
 const ensureSocialMediaPreviewTags = () => {
   // Define the high-quality image URL - use absolute URL for better compatibility
-  const highQualityImageUrl = 'https://aivillagetlv.com/Social.png';
+  // Add a cache-busting parameter to force fresh image load
+  const timestamp = new Date().getTime();
+  const highQualityImageUrl = `https://aivillagetlv.com/Social.png?t=${timestamp}`;
   
   // Array of social media meta properties to check and update
   const socialMetaTags = [
-    // WhatsApp specific tags
-    { property: 'og:image:url', content: highQualityImageUrl },
+    // Basic Open Graph tags used by most platforms
     { property: 'og:image', content: highQualityImageUrl },
+    { property: 'og:image:url', content: highQualityImageUrl },
     { property: 'og:image:secure_url', content: highQualityImageUrl },
     { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     { property: 'og:image:alt', content: 'AI Village @ BSides TLV 2025 logo' },
-    
-    // Additional tags for better WhatsApp compatibility
     { property: 'og:title', content: 'AI Village @ BSides TLV 2025' },
     { property: 'og:description', content: 'AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.' },
     { property: 'og:site_name', content: 'AI Village @ BSides TLV' },
     { property: 'og:url', content: 'https://aivillagetlv.com/' },
     
-    // Force cache invalidation by adding a timestamp parameter (optional)
-    { name: 'twitter:image', content: `${highQualityImageUrl}?t=${new Date().getTime()}` }
+    // Twitter-specific tags - critically important for Twitter cards
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:site', content: '@bsidestlv' },
+    { name: 'twitter:creator', content: '@bsidestlv' },
+    { name: 'twitter:image', content: highQualityImageUrl },
+    { name: 'twitter:image:src', content: highQualityImageUrl }, // Additional Twitter image property
+    { name: 'twitter:title', content: 'AI Village @ BSides TLV 2025' },
+    { name: 'twitter:description', content: 'AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.' },
+    { name: 'twitter:image:alt', content: 'AI Village @ BSides TLV 2025 logo' }
   ];
   
   // Ensure each meta tag exists and has the correct value
@@ -75,12 +88,16 @@ const ensureSocialMediaPreviewTags = () => {
   });
   
   // Add a preload hint for the image
-  const preloadLink = document.querySelector(`link[rel="preload"][href="${highQualityImageUrl}"]`);
+  const imageUrl = 'https://aivillagetlv.com/Social.png';
+  const preloadLink = document.querySelector(`link[rel="preload"][href="${imageUrl}"]`);
   if (!preloadLink) {
     const link = document.createElement('link');
     link.rel = 'preload';
-    link.href = highQualityImageUrl;
+    link.href = imageUrl;
     link.as = 'image';
     document.head.appendChild(link);
   }
+  
+  // Console log for debugging
+  console.log('Social media preview tags have been set/updated with timestamp:', timestamp);
 };

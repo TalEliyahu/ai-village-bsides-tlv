@@ -10,6 +10,13 @@ injectStructuredData();
 // Also ensure it's injected after DOM is fully loaded
 window.addEventListener('load', () => {
   injectStructuredData();
+  
+  // Additional injection with delay to ensure social media tags are present
+  // This can help with platforms that parse the page after initial load
+  setTimeout(() => {
+    injectStructuredData();
+    console.log('Delayed structured data injection completed');
+  }, 2000);
 });
 
 createRoot(document.getElementById("root")!).render(<App />);
