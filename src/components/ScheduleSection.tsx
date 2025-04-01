@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Coffee, Utensils, Mic } from 'lucide-react';
+import { Clock, Coffee, Utensils, Mic, Calendar, Sun } from 'lucide-react';
 import { 
   Table,
   TableHeader,
@@ -116,7 +116,8 @@ const ScheduleSection = () => {
         <div className="mb-12">
           <div className="bg-comic-black text-white p-4 font-bangers text-2xl mb-2 comic-border inline-flex items-center gap-2">
             <Clock size={24} />
-            <span>🕘 Morning Sessions</span>
+            <span>Morning Sessions</span>
+            <Sun size={24} />
           </div>
           
           <div className="comic-panel-jagged bg-white overflow-hidden overflow-x-auto">
@@ -140,7 +141,8 @@ const ScheduleSection = () => {
         <div className="mb-12">
           <div className="bg-comic-red text-white p-4 font-bangers text-2xl mb-2 comic-border inline-flex items-center gap-2">
             <Utensils size={24} />
-            <span>🍽️ Lunch Break</span>
+            <span>Lunch Break</span>
+            <Coffee size={24} />
           </div>
           
           <div className="comic-panel-jagged bg-white overflow-hidden overflow-x-auto">
@@ -174,7 +176,8 @@ const ScheduleSection = () => {
         <div className="mb-12">
           <div className="bg-comic-black text-white p-4 font-bangers text-2xl mb-2 comic-border inline-flex items-center gap-2">
             <Clock size={24} />
-            <span>🕑 Afternoon Sessions</span>
+            <span>Afternoon Sessions</span>
+            <Coffee size={24} />
           </div>
           
           <div className="comic-panel-jagged bg-white overflow-hidden overflow-x-auto">
@@ -198,7 +201,8 @@ const ScheduleSection = () => {
         <div>
           <div className="bg-comic-blue text-white p-4 font-bangers text-2xl mb-2 comic-border inline-flex items-center gap-2">
             <Mic size={24} />
-            <span>🎤 Closing Session</span>
+            <span>Closing Session</span>
+            <Clock size={24} />
           </div>
           
           <div className="comic-panel-jagged bg-white overflow-hidden overflow-x-auto">
