@@ -6,6 +6,7 @@ import {
   Drawer,
   DrawerContent,
   DrawerTrigger,
+  DrawerTitle,
 } from '@/components/ui/drawer';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -29,16 +30,16 @@ const MobileNav = () => {
   ];
   
   const handleLinkClick = (href: string) => {
-    // Force close the drawer
+    // Close the drawer immediately
     setOpen(false);
     
-    // Navigate to the section after drawer closes
+    // Navigate to the section with a slight delay to ensure drawer closes first
     setTimeout(() => {
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 300);
+    }, 100);
   };
   
   return (
@@ -54,10 +55,13 @@ const MobileNav = () => {
         </DrawerTrigger>
         <DrawerContent className="bg-comic-white border-4 border-comic-black z-[100]">
           <div className="px-4 py-6">
+            {/* Add DrawerTitle to fix accessibility warning */}
+            <DrawerTitle className="sr-only">Navigation Menu</DrawerTitle>
             <h3 className="font-bangers text-2xl text-comic-black mb-6 text-center" id="drawer-nav-heading">
               Jump to Section
             </h3>
-            <nav className="flex flex-col gap-4" aria-labelledby="drawer-nav-heading">
+            <nav className="flex flex-col gap-4" aria-labelledby="drawer-nav-heading" aria-describedby="navigation-description">
+              <p id="navigation-description" className="sr-only">Select a section to navigate to</p>
               {navLinks.map((link) => (
                 <button
                   key={link.name}
