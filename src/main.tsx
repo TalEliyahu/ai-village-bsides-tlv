@@ -18,11 +18,17 @@ window.addEventListener('load', () => {
     console.log('Delayed structured data injection completed');
   }, 2000);
   
-  // Extra delayed injection specifically for WhatsApp which may need more time
+  // Extra delayed injection specifically for WhatsApp and Telegram which may need more time
   setTimeout(() => {
     injectStructuredData();
-    console.log('Extended delay structured data injection for WhatsApp completed');
+    console.log('Extended delay structured data injection for WhatsApp and Telegram completed');
   }, 5000);
+  
+  // Final attempt for Telegram which sometimes needs even more time
+  setTimeout(() => {
+    injectStructuredData();
+    console.log('Final injection attempt for Telegram completed');
+  }, 8000);
 });
 
 createRoot(document.getElementById("root")!).render(<App />);
