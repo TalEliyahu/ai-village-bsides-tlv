@@ -103,12 +103,12 @@ const ScheduleSection = () => {
           <div className="h-0.5 w-12 bg-comic-yellow"></div>
         </div>
         
-        {/* Info box */}
+        {/* Info box - MODIFIED: Removed the text about Tel Aviv University and date */}
         <div className="bg-comic-blue p-6 comic-border text-white mb-12 max-w-xl mx-auto">
           <div className="flex items-center gap-4">
             <Clock className="h-8 w-8 flex-shrink-0" />
             <p className="font-comic text-lg">
-              Schedule is subject to change. All sessions will take place at Tel Aviv University on Thursday, June 26, 2025.
+              Schedule is subject to change.
             </p>
           </div>
         </div>
