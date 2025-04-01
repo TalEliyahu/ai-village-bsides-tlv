@@ -3,13 +3,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
                 http://www.google.com/schemas/sitemap-image/1.1
-                http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+                http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd
+                http://www.google.com/schemas/sitemap-video/1.1
+                http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd">
   <url>
     <loc>https://aivillage.bsidestlv.com/</loc>
-    <lastmod>2024-05-17</lastmod>
+    <lastmod>2024-05-17T10:30:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,29 +20,40 @@
       <image:title>The AI Village @ BSides TLV 2025 - Comic Book Multiverse Edition</image:title>
       <image:caption>Israel's premier AI security conference at Tel Aviv University</image:caption>
     </image:image>
+    <!-- Future promotional video can be added here -->
+    <video:video>
+      <video:thumbnail_loc>https://lovable.dev/opengraph-image-p98pqg.png</video:thumbnail_loc>
+      <video:title>AI Village @ BSides TLV 2025 Promo</video:title>
+      <video:description>Join Israel's premier AI security conference to explore AI vulnerabilities and solutions</video:description>
+      <video:content_loc>https://aivillage.bsidestlv.com/videos/promo2025.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2024-10-01T08:00:00+03:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
   </url>
   <!-- Main page sections -->
   <url>
     <loc>https://aivillage.bsidestlv.com/#about</loc>
-    <lastmod>2024-05-17</lastmod>
+    <lastmod>2024-05-17T10:30:00+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aivillage.bsidestlv.com/#speakers</loc>
-    <lastmod>2024-05-17</lastmod>
+    <lastmod>2024-05-17T10:30:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://aivillage.bsidestlv.com/#schedule</loc>
-    <lastmod>2024-05-17</lastmod>
+    <lastmod>2024-05-17T10:30:00+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://aivillage.bsidestlv.com/#why-attend</loc>
-    <lastmod>2024-05-17</lastmod>
+    <lastmod>2024-05-17T10:30:00+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

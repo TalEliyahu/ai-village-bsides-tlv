@@ -109,9 +109,61 @@ const Index = () => {
     });
     document.head.appendChild(breadcrumbScript);
     
+    // Add FAQ structured data
+    const faqScript = document.createElement('script');
+    faqScript.type = 'application/ld+json';
+    faqScript.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is The AI Village @ BSides TLV 2025?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The AI Village @ BSides TLV 2025 is Israel's premier AI security conference dedicated to exploring AI vulnerabilities, red teaming techniques, prompt injection attacks, and LLM security challenges. This year's theme is 'Comic Book Multiverse Edition'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When and where will the event take place?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The event will take place on June 26, 2025 from 9:00 AM to 6:00 PM at Tel Aviv University, Tel Aviv, Israel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to attend?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The AI Village @ BSides TLV 2025 is a free community event."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who should attend The AI Village?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Security researchers, AI specialists, red teamers, blue teamers, students, and anyone interested in the intersection of AI and security should attend."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will there be hands-on workshops at the event?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the event will feature hands-on workshops led by experienced practitioners in AI security, allowing participants to gain practical experience with modern AI vulnerabilities and security techniques."
+          }
+        }
+      ]
+    });
+    document.head.appendChild(faqScript);
+    
     return () => {
       document.head.removeChild(script);
       document.head.removeChild(breadcrumbScript);
+      document.head.removeChild(faqScript);
     };
   }, []);
 
