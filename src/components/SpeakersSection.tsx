@@ -114,6 +114,7 @@ const SpeakersSection = () => {
       placeholder: "TE",
       confirmed: true,
       imageUrl: "/lovable-uploads/57b467e3-8aa6-41e7-9fae-5449489f3d3f.png",
+      linkedinUrl: "https://www.linkedin.com/in/adgnji/",
       role: "AI Village Lead"
     }
   ];
