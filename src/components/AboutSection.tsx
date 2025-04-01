@@ -7,10 +7,10 @@ const AboutSection = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section id="about" className="py-16 px-4 relative">
+    <section id="about" className="py-10 px-4 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section title */}
-        <div className="flex items-center justify-center mb-12">
+        <div className="flex items-center justify-center mb-10">
           <div className="h-0.5 w-6 md:w-12 bg-comic-red"></div>
           <h2 className="font-bangers text-3xl md:text-5xl px-2 md:px-4 text-white comic-text-stroke">ABOUT THE VILLAGE</h2>
           <div className="h-0.5 w-6 md:w-12 bg-comic-red"></div>

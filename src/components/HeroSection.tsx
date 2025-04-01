@@ -4,7 +4,7 @@ import { Zap, Star, ArrowDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center items-center px-4 sm:px-6 overflow-hidden pt-10 pb-10">
+    <section className="relative min-h-[80vh] flex flex-col justify-center items-center px-4 sm:px-6 overflow-hidden pt-10 pb-6">
       {/* Background decorative elements */}
       <div className="absolute inset-0 dot-pattern opacity-40 z-0"></div>
       <div className="absolute top-20 right-10 h-16 w-16 sm:h-24 sm:w-24 explosion animate-pulse-bright z-0"></div>
@@ -34,15 +34,10 @@ const HeroSection = () => {
           <span className="block"><span className="text-white">@</span> <span className="text-comic-red">BSIDES</span> <span className="text-comic-blue">TLV</span></span>
         </h1>
         
-        <div className="speech-bubble max-w-xs sm:max-w-sm md:max-w-lg mx-auto mb-8 animate-float">
+        <div className="speech-bubble max-w-xs sm:max-w-sm md:max-w-lg mx-auto mb-4 animate-float">
           <p className="font-rubik text-comic-black text-sm sm:text-base md:text-lg">
             <span className="font-black text-comic-red">COMIC BOOK</span> <span className="font-black text-comic-blue">MULTIVERSE</span> <span className="font-black text-comic-yellow">EDITION!</span> Join heroes and villains from across the AI security universe for a day of hacking, learning, and collaboration!
           </p>
-        </div>
-        
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <ArrowDown size={24} aria-label="Scroll down to learn more" />
-          <span className="sr-only">Scroll down to learn more</span>
         </div>
       </div>
     </section>
