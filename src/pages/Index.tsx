@@ -14,8 +14,8 @@ const Index = () => {
       {/* Reduced spacing between hero and about section */}
       <div className="-mt-16 md:-mt-20"></div>
       <AboutSection />
-      <ScheduleSection />
       <SpeakersSection />
+      <ScheduleSection />
       <Footer />
       <ScrollToTopButton />
     </main>
