@@ -52,38 +52,6 @@
     <!-- Accessible-specific meta tags -->
     <meta name="language" content="English" />
     <meta name="robots" content="index, follow" />
-    
-    <!-- Script to hide Lovable badge -->
-    <script>
-      window.addEventListener('load', function() {
-        // Function to hide the Lovable badge
-        function hideLovableBadge() {
-          // Look for elements that might contain the Lovable badge
-          const badges = document.querySelectorAll('[class*="lovable"], [id*="lovable"], [class*="edit-with"], a[href*="lovable.dev"]');
-          badges.forEach(function(badge) {
-            if (badge) {
-              badge.style.display = 'none';
-            }
-          });
-          
-          // Also try to find by common positions (bottom right fixed elements)
-          const possibleBadges = document.querySelectorAll('div[style*="position:fixed"][style*="bottom"][style*="right"], div[style*="position: fixed"][style*="bottom"][style*="right"]');
-          possibleBadges.forEach(function(element) {
-            if (element.innerHTML.toLowerCase().includes('lovable') || 
-                element.innerHTML.toLowerCase().includes('edit with')) {
-              element.style.display = 'none';
-            }
-          });
-        }
-        
-        // Run immediately
-        hideLovableBadge();
-        
-        // Also run after a short delay to catch dynamically added elements
-        setTimeout(hideLovableBadge, 1000);
-        setTimeout(hideLovableBadge, 3000);
-      });
-    </script>
   </head>
 
   <body>
