@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
-  Drawer,
-  DrawerContent,
-  DrawerTrigger,
-  DrawerTitle,
-} from '@/components/ui/drawer';
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from '@/components/ui/sheet';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 const MobileNav = () => {
@@ -30,33 +30,32 @@ const MobileNav = () => {
   ];
   
   const handleLinkClick = (href: string) => {
-    // Close the drawer immediately
+    // First, close the sheet
     setOpen(false);
     
-    // Navigate to the section with a slight delay to ensure drawer closes first
+    // Then navigate after a short delay to ensure the sheet is fully closed
     setTimeout(() => {
       const element = document.querySelector(href);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
-    }, 100);
+    }, 150);
   };
   
   return (
     <div className="fixed bottom-6 right-6 z-[100]">
-      <Drawer open={open} onOpenChange={setOpen}>
-        <DrawerTrigger asChild>
+      <Sheet open={open} onOpenChange={setOpen}>
+        <SheetTrigger asChild>
           <Button 
             className="h-14 w-14 rounded-full bg-comic-red hover:bg-comic-red/90 shadow-lg flex items-center justify-center"
             aria-label="Navigation menu"
           >
             <Menu className="h-6 w-6 text-white" />
           </Button>
-        </DrawerTrigger>
-        <DrawerContent className="bg-comic-white border-4 border-comic-black z-[100]">
+        </SheetTrigger>
+        <SheetContent side="bottom" className="bg-comic-white border-4 border-comic-black z-[100] p-0 rounded-t-2xl">
           <div className="px-4 py-6">
-            {/* Add DrawerTitle to fix accessibility warning */}
-            <DrawerTitle className="sr-only">Navigation Menu</DrawerTitle>
+            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <h3 className="font-bangers text-2xl text-comic-black mb-6 text-center" id="drawer-nav-heading">
               Jump to Section
             </h3>
@@ -74,8 +73,8 @@ const MobileNav = () => {
               ))}
             </nav>
           </div>
-        </DrawerContent>
-      </Drawer>
+        </SheetContent>
+      </Sheet>
     </div>
   );
 };
