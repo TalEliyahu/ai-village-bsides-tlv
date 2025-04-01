@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -13,7 +13,14 @@ import { useIsMobile } from '@/hooks/use-mobile';
 const MobileNav = () => {
   const isMobile = useIsMobile();
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   
+  // Handle hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  
+  if (!mounted) return null;
   if (!isMobile) return null;
   
   const navLinks = [
@@ -34,7 +41,7 @@ const MobileNav = () => {
   };
   
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-[100]">
       <Drawer open={open} onOpenChange={setOpen}>
         <DrawerTrigger asChild>
           <Button 
@@ -44,7 +51,7 @@ const MobileNav = () => {
             <Menu className="h-6 w-6 text-white" />
           </Button>
         </DrawerTrigger>
-        <DrawerContent className="bg-comic-white border-4 border-comic-black">
+        <DrawerContent className="bg-comic-white border-4 border-comic-black z-[100]">
           <div className="px-4 py-6">
             <h3 className="font-bangers text-2xl text-comic-black mb-6 text-center" id="drawer-nav-heading">
               Jump to Section

@@ -1,47 +1,23 @@
 
-import * as React from "react"
-
-const MOBILE_BREAKPOINT = 768
+import { useState, useEffect } from 'react';
 
 export function useIsMobile() {
-  // Initialize with undefined to avoid hydration mismatch
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
+  const [isMobile, setIsMobile] = useState(false);
 
-  React.useEffect(() => {
-    // Function to check if the viewport width is mobile
-    const checkIsMobile = () => {
-      return window.innerWidth < MOBILE_BREAKPOINT;
-    };
-    
-    // Set the initial value
-    setIsMobile(checkIsMobile());
-    
-    // Create event listener
-    const handleResize = () => {
-      setIsMobile(checkIsMobile());
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
     };
 
-    // Add event listener with throttling to improve performance
-    let resizeTimer: number | undefined;
-    const throttledResize = () => {
-      if (resizeTimer) {
-        window.clearTimeout(resizeTimer);
-      }
-      resizeTimer = window.setTimeout(handleResize, 100);
-    };
+    // Initial check
+    checkIfMobile();
 
-    window.addEventListener("resize", throttledResize);
-    
-    // Clean up
-    return () => {
-      window.removeEventListener("resize", throttledResize);
-      if (resizeTimer) {
-        window.clearTimeout(resizeTimer);
-      }
-    };
+    // Add event listener for window resize
+    window.addEventListener('resize', checkIfMobile);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', checkIfMobile);
   }, []);
 
-  // Return false when on the server or when the state hasn't been determined yet
-  // to avoid hydration mismatches
-  return isMobile === undefined ? false : isMobile;
+  return isMobile;
 }

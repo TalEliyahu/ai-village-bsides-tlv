@@ -20,20 +20,17 @@ import {
 } from '@/utils/structuredData';
 
 const Index = () => {
-  // Add structured data for event
   useEffect(() => {
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.innerHTML = JSON.stringify(generateEventStructuredData());
     document.head.appendChild(script);
     
-    // Add breadcrumb structured data
     const breadcrumbScript = document.createElement('script');
     breadcrumbScript.type = 'application/ld+json';
     breadcrumbScript.innerHTML = JSON.stringify(generateBreadcrumbStructuredData());
     document.head.appendChild(breadcrumbScript);
     
-    // Add FAQ structured data
     const faqScript = document.createElement('script');
     faqScript.type = 'application/ld+json';
     faqScript.innerHTML = JSON.stringify(generateFAQStructuredData());
@@ -48,7 +45,6 @@ const Index = () => {
 
   return (
     <main className="min-h-screen overflow-x-hidden">
-      {/* Hidden breadcrumb for SEO - visually hidden but accessible to screen readers and search engines */}
       <div className="sr-only">
         <Breadcrumb>
           <BreadcrumbList>
