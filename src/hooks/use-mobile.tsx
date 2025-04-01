@@ -16,12 +16,12 @@ export function useIsMobile() {
     checkIfMobile();
     
     // Use a throttled resize handler for better performance
-    let resizeTimer: ReturnType<typeof setTimeout>;
+    let resizeTimer: NodeJS.Timeout | null = null;
     const handleResize = () => {
       if (!resizeTimer) {
         resizeTimer = setTimeout(() => {
           checkIfMobile();
-          resizeTimer = 0;
+          resizeTimer = null;
         }, 100);
       }
     };
