@@ -1,10 +1,9 @@
-
 export const generateEventStructuredData = () => {
   return {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": "The AI Village @ BSides TLV 2025 - Comic Book Multiverse Edition",
-    "description": "Israel's premier AI security conference dedicated to exploring AI vulnerabilities, red teaming techniques, prompt injection attacks, and LLM security challenges. Join top security researchers and AI experts for hands-on workshops and cutting-edge discussions.",
+    "description": "AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.",
     "startDate": "2025-06-26T09:00:00+03:00",
     "endDate": "2025-06-26T18:00:00+03:00",
     "location": {
@@ -91,7 +90,7 @@ export const generateFAQStructuredData = () => {
         "name": "What is The AI Village @ BSides TLV 2025?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The AI Village @ BSides TLV 2025 is Israel's premier AI security conference dedicated to exploring AI vulnerabilities, red teaming techniques, prompt injection attacks, and LLM security challenges. This year's theme is 'Comic Book Multiverse Edition'."
+          "text": "AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies. This year's theme is 'Comic Book Multiverse Edition'."
         }
       },
       {
