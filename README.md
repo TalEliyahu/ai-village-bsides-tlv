@@ -41,6 +41,22 @@ If you're curious about how AI systems break — and how to secure them — you 
 
 ### 💬 Topics We'll Cover
 
+- Red teaming LLMs and generative AI systems  
+- Adversarial evasion and bypass techniques  
+- AI model abuse, jailbreaks, and prompt manipulation  
+- Training data attacks and poisoning  
+- Defense strategies for robust AI deployment  
+- Securing the responsible use of AI in security operations  
+- Prompt injection and indirect prompt chaining attacks  
+- AI supply chain risks (model provenance, tampering, and dependencies)  
+- Detecting AI-generated content in security workflows  
+- Interpretability and explainability in high-stakes environments  
+- Evaluating the limits of AI in incident response and threat detection
+
+### 🎤 Confirmed Lineup
+
+We're proud to feature speakers from across the Israeli AI and cybersecurity community:
+
 - [Daniel Liezrowice](https://www.linkedin.com/in/liezrowice/) – CEO and Co-Founder at Engineering Software Lab (ESL)
 - [Alex Polyakov](https://www.linkedin.com/in/alex-polyakov-cyber/) – Co-Founder and CEO at Adversa AI
 - [Vitaly Simonovich](https://www.linkedin.com/in/vitalysimonovich/) – Threat Intelligence Researcher at Cato Networks
@@ -51,21 +67,6 @@ If you're curious about how AI systems break — and how to secure them — you 
 - [Tal Skverer](https://www.linkedin.com/in/reverser/) – Head of Research at Astrix Security
 - [Ziv Karliner](https://www.linkedin.com/in/ziv-karliner-72629893/) – Co-Founder and CTO at Pillar Security
 - *One speaker to be confirmed*
-
-### 🎤 Confirmed Lineup
-
-We're proud to feature speakers from across the Israeli AI and cybersecurity community:
-
-- Daniel Liezrowice – CEO and Co-Founder at Engineering Software Lab (ESL)
-- Alex Polyakov – Co-Founder and CEO at Adversa AI
-- Vitaly Simonovich – Threat Intelligence Researcher at Cato Networks
-- Itamar Golan – CEO and Co-Founder at Prompt Security
-- Dor Amit – Co-Founder at 10root Cyber Security
-- Elli Shlomo – Head of Security Research at Guardz
-- Ran Dubin – CTO at BUFFERZONE Security and Senior Lecturer at Ariel University
-- Tal Skverer – Head of Research at Astrix Security
-- Ziv Karliner – Co-Founder and CTO at Pillar Security
-- One speaker to be confirmed
 
 ### 📢 Stay Updated
 
