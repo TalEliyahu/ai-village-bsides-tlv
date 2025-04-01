@@ -20,10 +20,6 @@ const Footer = () => {
             COMIC MULTIVERSE EDITION
           </div>
         </div>
-        
-        <p className="text-gray-400 text-sm font-comic">
-          © 2025 AI Village @ BSides TLV
-        </p>
       </div>
     </footer>
   );
