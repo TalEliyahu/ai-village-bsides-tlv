@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -22,6 +23,19 @@ import {
 
 const Index = () => {
   useEffect(() => {
+    // Create and add favicon link if not already present
+    const addFavicon = () => {
+      // Check if favicon link already exists
+      const existingFavicon = document.querySelector('link[rel="icon"]');
+      if (!existingFavicon) {
+        const favicon = document.createElement('link');
+        favicon.rel = 'icon';
+        favicon.href = '/favicon.ico';
+        favicon.type = 'image/x-icon';
+        document.head.appendChild(favicon);
+      }
+    };
+    
     // Prefetch favicon
     const prefetchResources = () => {
       const links = [
@@ -57,6 +71,7 @@ const Index = () => {
     orgScript.innerHTML = JSON.stringify(generateOrganizationStructuredData());
     document.head.appendChild(orgScript);
     
+    addFavicon();
     prefetchResources();
     
     // Cleanup function
