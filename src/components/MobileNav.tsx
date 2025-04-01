@@ -46,19 +46,21 @@ const MobileNav = () => {
         </DrawerTrigger>
         <DrawerContent className="bg-comic-white border-4 border-comic-black">
           <div className="px-4 py-6">
-            <h3 className="font-bangers text-2xl text-comic-black mb-6 text-center">
+            <h3 className="font-bangers text-2xl text-comic-black mb-6 text-center" id="drawer-nav-heading">
               Jump to Section
             </h3>
-            <nav className="flex flex-col gap-4">
+            <nav className="flex flex-col gap-4" aria-labelledby="drawer-nav-heading">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => handleLinkClick(link.href)}
                   className="w-full py-3 px-4 bg-comic-blue text-white font-bangers text-xl text-center rounded-md hover:bg-comic-blue/90 transition-colors"
+                  aria-label={`Navigate to ${link.name} section`}
                 >
                   {link.name}
                 </button>
               ))}
+              <DrawerClose className="sr-only">Close navigation menu</DrawerClose>
             </nav>
           </div>
         </DrawerContent>
