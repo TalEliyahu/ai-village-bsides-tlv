@@ -30,10 +30,10 @@ const MobileNav = () => {
   ];
   
   const handleLinkClick = (href: string) => {
-    // Explicitly set drawer state to closed
+    // Force close the drawer
     setOpen(false);
     
-    // Allow time for the drawer to close before scrolling
+    // Navigate to the section after drawer closes
     setTimeout(() => {
       const element = document.querySelector(href);
       if (element) {

@@ -1,8 +1,10 @@
+
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
+import WhyAttendSection from '@/components/WhyAttendSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import MobileNav from '@/components/MobileNav';
@@ -21,6 +23,7 @@ import {
 
 const Index = () => {
   useEffect(() => {
+    // Add structured data for SEO
     const script = document.createElement('script');
     script.type = 'application/ld+json';
     script.innerHTML = JSON.stringify(generateEventStructuredData());
@@ -36,6 +39,7 @@ const Index = () => {
     faqScript.innerHTML = JSON.stringify(generateFAQStructuredData());
     document.head.appendChild(faqScript);
     
+    // Cleanup function
     return () => {
       document.head.removeChild(script);
       document.head.removeChild(breadcrumbScript);
@@ -71,6 +75,7 @@ const Index = () => {
       <AboutSection />
       <SpeakersSection />
       <ScheduleSection />
+      <WhyAttendSection />
       <Footer />
       <ScrollToTopButton />
       <MobileNav />
