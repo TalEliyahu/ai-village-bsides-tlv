@@ -72,8 +72,8 @@ const ScheduleSection = () => {
           ${item.type === 'closing' ? 'bg-comic-blue/20' : ''}
         `}
       >
-        <TableCell className="py-4 px-4 font-comic font-bold whitespace-nowrap">{item.time}</TableCell>
-        <TableCell className="py-4 px-4 font-comic">
+        <TableCell className="py-4 px-4 font-comic font-bold whitespace-nowrap text-comic-black">{item.time}</TableCell>
+        <TableCell className="py-4 px-4 font-comic text-comic-black">
           <div className="flex items-center gap-2">
             {item.type === 'break' && <Coffee size={16} className="text-gray-500" />}
             {item.type === 'lunch' && <Utensils size={16} className="text-comic-red" />}
@@ -87,8 +87,8 @@ const ScheduleSection = () => {
             )}
           </div>
         </TableCell>
-        <TableCell className="py-4 px-4 font-comic">{item.speaker}</TableCell>
-        <TableCell className="py-4 px-4 font-comic text-right">{item.duration}</TableCell>
+        <TableCell className="py-4 px-4 font-comic text-comic-black">{item.speaker}</TableCell>
+        <TableCell className="py-4 px-4 font-comic text-right text-comic-black">{item.duration}</TableCell>
       </TableRow>
     ));
   };
@@ -99,7 +99,7 @@ const ScheduleSection = () => {
         {/* Section title */}
         <div className="flex items-center justify-center mb-16">
           <div className="h-0.5 w-12 bg-comic-yellow"></div>
-          <h2 className="font-bangers text-5xl px-4 text-white comic-text-stroke">EVENT SCHEDULE</h2>
+          <h2 className="font-bangers text-5xl px-4 text-comic-black">EVENT SCHEDULE</h2>
           <div className="h-0.5 w-12 bg-comic-yellow"></div>
         </div>
         
@@ -156,14 +156,14 @@ const ScheduleSection = () => {
               <TableBody>
                 {lunchSchedule.map((item, index) => (
                   <TableRow key={index} className="bg-comic-red/10">
-                    <TableCell className="py-4 px-4 font-comic font-bold">{item.time}</TableCell>
-                    <TableCell className="py-4 px-4 font-comic">
+                    <TableCell className="py-4 px-4 font-comic font-bold text-comic-black">{item.time}</TableCell>
+                    <TableCell className="py-4 px-4 font-comic text-comic-black">
                       <div className="flex items-center gap-2">
                         <Utensils size={16} className="text-comic-red" />
                         <span>{item.title}</span>
                       </div>
                     </TableCell>
-                    <TableCell className="py-4 px-4 font-comic text-right">{item.duration}</TableCell>
+                    <TableCell className="py-4 px-4 font-comic text-right text-comic-black">{item.duration}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -214,15 +214,15 @@ const ScheduleSection = () => {
               <TableBody>
                 {closingSchedule.map((item, index) => (
                   <TableRow key={index} className="bg-comic-blue/20">
-                    <TableCell className="py-4 px-4 font-comic font-bold">{item.time}</TableCell>
-                    <TableCell className="py-4 px-4 font-comic">
+                    <TableCell className="py-4 px-4 font-comic font-bold text-comic-black">{item.time}</TableCell>
+                    <TableCell className="py-4 px-4 font-comic text-comic-black">
                       <div className="flex items-center gap-2">
                         <Mic size={16} className="text-comic-blue" />
                         <span>{item.title}</span>
                         <span className="ml-2 inline-block px-2 py-1 bg-comic-blue text-xs rounded-full text-white font-bold">CLOSING</span>
                       </div>
                     </TableCell>
-                    <TableCell className="py-4 px-4 font-comic text-right">{item.duration}</TableCell>
+                    <TableCell className="py-4 px-4 font-comic text-right text-comic-black">{item.duration}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
