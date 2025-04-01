@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-Official website for the AI Village @ BSides TLV 2025 conference - a focused track dedicated to AI system security, bringing together researchers, engineers, and security professionals to explore attack surfaces and defense strategies in AI technologies.
+AI Village @ BSides TLV 2025 - A focused track dedicated to AI system security, bringing together researchers, engineers, and security professionals to explore attack surfaces and defense strategies in AI technologies.
 
 **Event Date:** June 26, 2025  
 **Location:** Tel Aviv University  
