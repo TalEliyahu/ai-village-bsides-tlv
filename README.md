@@ -41,17 +41,16 @@ If you're curious about how AI systems break — and how to secure them — you 
 
 ### 💬 Topics We'll Cover
 
-- Red teaming LLMs and generative AI systems
-- Adversarial evasion and bypass techniques
-- AI model abuse, jailbreaks, and prompt manipulation
-- Training data attacks and poisoning
-- Defense strategies for robust AI deployment
-- Securing the responsible use of AI in security operations
-- Prompt injection and indirect prompt chaining attacks
-- AI supply chain risks (model provenance, tampering, and dependencies)
-- Detecting AI-generated content in security workflows
-- Interpretability and explainability in high-stakes environments
-- Evaluating the limits of AI in incident response and threat detection
+- [Daniel Liezrowice](https://www.linkedin.com/in/liezrowice/) – CEO and Co-Founder at Engineering Software Lab (ESL)
+- [Alex Polyakov](https://www.linkedin.com/in/alex-polyakov-cyber/) – Co-Founder and CEO at Adversa AI
+- [Vitaly Simonovich](https://www.linkedin.com/in/vitalysimonovich/) – Threat Intelligence Researcher at Cato Networks
+- [Itamar Golan](https://www.linkedin.com/in/itamar-g1/) – CEO and Co-Founder at Prompt Security
+- [Dor Amit](https://www.linkedin.com/in/dor-amit-7791397/) – Co-Founder at 10root Cyber Security
+- [Elli Shlomo](https://www.linkedin.com/in/elishlomo/) – Head of Security Research at Guardz
+- [Ran Dubin](https://www.linkedin.com/in/dubinran/) – CTO at BUFFERZONE Security and Senior Lecturer at Ariel University
+- [Tal Skverer](https://www.linkedin.com/in/reverser/) – Head of Research at Astrix Security
+- [Ziv Karliner](https://www.linkedin.com/in/ziv-karliner-72629893/) – Co-Founder and CTO at Pillar Security
+- *One speaker to be confirmed*
 
 ### 🎤 Confirmed Lineup
 
