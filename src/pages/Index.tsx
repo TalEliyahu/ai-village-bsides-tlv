@@ -17,11 +17,26 @@ import {
 import { 
   generateEventStructuredData, 
   generateBreadcrumbStructuredData, 
-  generateFAQStructuredData 
+  generateFAQStructuredData,
+  generateOrganizationStructuredData
 } from '@/utils/structuredData';
 
 const Index = () => {
   useEffect(() => {
+    // Prefetch important resources
+    const prefetchResources = () => {
+      const links = [
+        '/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png' // Main logo
+      ];
+      
+      links.forEach(link => {
+        const prefetchLink = document.createElement('link');
+        prefetchLink.rel = 'prefetch';
+        prefetchLink.href = link;
+        document.head.appendChild(prefetchLink);
+      });
+    };
+    
     // Add structured data for SEO
     const script = document.createElement('script');
     script.type = 'application/ld+json';
@@ -38,11 +53,19 @@ const Index = () => {
     faqScript.innerHTML = JSON.stringify(generateFAQStructuredData());
     document.head.appendChild(faqScript);
     
+    const orgScript = document.createElement('script');
+    orgScript.type = 'application/ld+json';
+    orgScript.innerHTML = JSON.stringify(generateOrganizationStructuredData());
+    document.head.appendChild(orgScript);
+    
+    prefetchResources();
+    
     // Cleanup function
     return () => {
       document.head.removeChild(script);
       document.head.removeChild(breadcrumbScript);
       document.head.removeChild(faqScript);
+      document.head.removeChild(orgScript);
     };
   }, []);
 

@@ -1,4 +1,3 @@
-
 export const generateEventStructuredData = () => {
   return {
     "@context": "https://schema.org",
@@ -127,5 +126,26 @@ export const generateFAQStructuredData = () => {
         }
       }
     ]
+  };
+};
+
+export const generateOrganizationStructuredData = () => {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AI Village @ BSides TLV",
+    "url": "https://aivillagetlv.com",
+    "logo": "https://aivillagetlv.com/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png",
+    "sameAs": [
+      "https://twitter.com/bsidestlv",
+      "https://www.linkedin.com/company/bsides-tlv"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+972-000-0000",
+      "contactType": "customer service",
+      "email": "info@aivillagetlv.com",
+      "availableLanguage": ["English", "Hebrew"]
+    }
   };
 };
