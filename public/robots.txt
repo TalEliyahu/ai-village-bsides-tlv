@@ -1,7 +1,16 @@
+
+# Allow all search engine bots to index the site
+User-agent: *
+Allow: /
+
+# Specific permissions for major search engines
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: Yandexbot
 Allow: /
 
 User-agent: Twitterbot
@@ -10,5 +19,5 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
-Allow: /
+# Sitemap location
+Sitemap: https://aivillage.bsidestlv.com/sitemap.xml
