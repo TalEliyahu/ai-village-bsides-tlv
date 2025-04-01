@@ -36,15 +36,16 @@ const Index = () => {
       }
       
       // Add additional favicon formats for better browser support
-      const sizes = ['16x16', '32x32', '48x48'];
-      sizes.forEach(size => {
+      const sizesArray = ['16x16', '32x32', '48x48'];
+      sizesArray.forEach(size => {
         const existingSizedIcon = document.querySelector(`link[rel="icon"][sizes="${size}"]`);
         if (!existingSizedIcon) {
           const sizedIcon = document.createElement('link');
           sizedIcon.rel = 'icon';
           sizedIcon.type = 'image/png';
           sizedIcon.href = '/favicon.ico';
-          sizedIcon.sizes = size;
+          // Use setAttribute instead of direct assignment for TypeScript compatibility
+          sizedIcon.setAttribute('sizes', size);
           document.head.appendChild(sizedIcon);
         }
       });
