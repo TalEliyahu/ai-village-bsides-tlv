@@ -3,13 +3,13 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="py-6 sm:py-10 px-3 sm:px-4 relative bg-comic-black border-t-4 border-comic-yellow mb-12 sm:mb-0">
+    <footer className="py-3 sm:py-10 px-2 sm:px-4 relative bg-comic-black border-t-4 border-comic-yellow mb-10 sm:mb-0">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="font-bangers text-xl sm:text-3xl md:text-4xl text-white mb-3 sm:mb-5">
+        <h2 className="font-bangers text-xl sm:text-3xl md:text-4xl text-white mb-1 sm:mb-5">
           THE AI VILLAGE @ BSIDES TLV
         </h2>
         
-        <div className="flex flex-wrap justify-center gap-1 sm:gap-4 mb-4 sm:mb-6">
+        <div className="flex flex-wrap justify-center gap-1 sm:gap-4 mb-2 sm:mb-6">
           <div className="bg-comic-red px-2 py-0.5 sm:px-4 sm:py-2 text-white font-comic font-bold text-xs sm:text-base">
             JUNE 26, 2025
           </div>
