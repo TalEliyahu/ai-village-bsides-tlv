@@ -67,7 +67,9 @@ const MobileNav = () => {
                   {link.name}
                 </button>
               ))}
-              <DrawerClose className="sr-only">Close navigation menu</DrawerClose>
+              <DrawerClose className="w-full py-3 px-4 bg-comic-red text-white font-bangers text-xl text-center rounded-md hover:bg-comic-red/90 transition-colors">
+                Close Menu
+              </DrawerClose>
             </nav>
           </div>
         </DrawerContent>
