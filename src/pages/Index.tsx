@@ -3,7 +3,6 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
-import WhyAttendSection from '@/components/WhyAttendSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { 
@@ -98,12 +97,6 @@ const Index = () => {
           "position": 4,
           "name": "Schedule",
           "item": "https://aivillage.bsidestlv.com/#schedule"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Why Attend",
-          "item": "https://aivillage.bsidestlv.com/#why-attend"
         }
       ]
     });
@@ -188,10 +181,6 @@ const Index = () => {
             <BreadcrumbItem>
               <BreadcrumbLink href="#schedule">Schedule</BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage>Why Attend</BreadcrumbPage>
-            </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
@@ -202,7 +191,6 @@ const Index = () => {
       <AboutSection />
       <SpeakersSection />
       <ScheduleSection />
-      <WhyAttendSection />
       <Footer />
       <ScrollToTopButton />
     </main>
