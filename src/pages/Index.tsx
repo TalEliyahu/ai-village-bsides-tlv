@@ -34,6 +34,29 @@ const Index = () => {
         favicon.type = 'image/x-icon';
         document.head.appendChild(favicon);
       }
+      
+      // Add additional favicon formats for better browser support
+      const sizes = ['16x16', '32x32', '48x48'];
+      sizes.forEach(size => {
+        const existingSizedIcon = document.querySelector(`link[rel="icon"][sizes="${size}"]`);
+        if (!existingSizedIcon) {
+          const sizedIcon = document.createElement('link');
+          sizedIcon.rel = 'icon';
+          sizedIcon.type = 'image/png';
+          sizedIcon.href = '/favicon.ico';
+          sizedIcon.sizes = size;
+          document.head.appendChild(sizedIcon);
+        }
+      });
+      
+      // Ensure apple-touch-icon exists
+      const existingAppleIcon = document.querySelector('link[rel="apple-touch-icon"]');
+      if (!existingAppleIcon) {
+        const appleIcon = document.createElement('link');
+        appleIcon.rel = 'apple-touch-icon';
+        appleIcon.href = '/favicon.ico';
+        document.head.appendChild(appleIcon);
+      }
     };
     
     // Prefetch favicon
