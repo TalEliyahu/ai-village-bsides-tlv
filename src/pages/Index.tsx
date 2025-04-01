@@ -35,15 +35,20 @@ const Index = () => {
         document.head.appendChild(favicon);
       }
       
-      // Add additional favicon formats for better browser support
-      const sizesArray = ['16x16', '32x32', '48x48'];
-      sizesArray.forEach(size => {
+      // Add specific favicon sizes with the correct PNG files
+      const sizeMap = {
+        '16x16': '/favicon-16x16.png',
+        '32x32': '/favicon-32x32.png',
+        '48x48': '/favicon.ico' // Keep using .ico for 48x48 as we don't have a specific PNG
+      };
+      
+      Object.entries(sizeMap).forEach(([size, path]) => {
         const existingSizedIcon = document.querySelector(`link[rel="icon"][sizes="${size}"]`);
         if (!existingSizedIcon) {
           const sizedIcon = document.createElement('link');
           sizedIcon.rel = 'icon';
-          sizedIcon.type = 'image/png';
-          sizedIcon.href = '/favicon.ico';
+          sizedIcon.type = size.includes('ico') ? 'image/x-icon' : 'image/png';
+          sizedIcon.href = path;
           // Use setAttribute instead of direct assignment for TypeScript compatibility
           sizedIcon.setAttribute('sizes', size);
           document.head.appendChild(sizedIcon);
@@ -55,15 +60,17 @@ const Index = () => {
       if (!existingAppleIcon) {
         const appleIcon = document.createElement('link');
         appleIcon.rel = 'apple-touch-icon';
-        appleIcon.href = '/favicon.ico';
+        appleIcon.href = '/favicon-32x32.png'; // Use the 32x32 PNG for apple-touch-icon
         document.head.appendChild(appleIcon);
       }
     };
     
-    // Prefetch favicon
+    // Prefetch resources
     const prefetchResources = () => {
       const links = [
-        '/favicon.ico' // Main logo and favicon
+        '/favicon.ico',
+        '/favicon-16x16.png',
+        '/favicon-32x32.png'
       ];
       
       links.forEach(link => {

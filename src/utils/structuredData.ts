@@ -3,8 +3,8 @@ export const generateEventStructuredData = () => {
   return {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "The AI Village @ BSides TLV 2025 - Comic Book Multiverse Edition",
-    "description": "Israel's premier AI security conference dedicated to exploring AI vulnerabilities, red teaming techniques, prompt injection attacks, and LLM security challenges. Join top security researchers and AI experts for hands-on workshops and cutting-edge discussions.",
+    "name": "AI Village @ BSides TLV 2025",
+    "description": "AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.",
     "startDate": "2025-06-26T09:00:00+03:00",
     "endDate": "2025-06-26T18:00:00+03:00",
     "location": {
@@ -24,7 +24,7 @@ export const generateEventStructuredData = () => {
         "longitude": "34.8044"
       }
     },
-    "image": "https://aivillagetlv.com/favicon.ico",
+    "image": "https://aivillagetlv.com/lovable-uploads/63e43999-fbcf-4f17-bee1-7985e3fce95f.png",
     "offers": {
       "@type": "Offer",
       "url": "https://aivillagetlv.com/",
@@ -91,7 +91,7 @@ export const generateFAQStructuredData = () => {
         "name": "What is The AI Village @ BSides TLV 2025?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The AI Village @ BSides TLV 2025 is Israel's premier AI security conference dedicated to exploring AI vulnerabilities, red teaming techniques, prompt injection attacks, and LLM security challenges. This year's theme is 'Comic Book Multiverse Edition'."
+          "text": "AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies. This year's theme is 'Comic Book Multiverse Edition'."
         }
       },
       {
@@ -136,7 +136,8 @@ export const generateOrganizationStructuredData = () => {
     "@type": "Organization",
     "name": "AI Village @ BSides TLV",
     "url": "https://aivillagetlv.com",
-    "logo": "https://aivillagetlv.com/favicon.ico",
+    "logo": "https://aivillagetlv.com/lovable-uploads/63e43999-fbcf-4f17-bee1-7985e3fce95f.png",
+    "image": "https://aivillagetlv.com/lovable-uploads/63e43999-fbcf-4f17-bee1-7985e3fce95f.png",
     "sameAs": [
       "https://twitter.com/bsidestlv",
       "https://www.linkedin.com/company/bsides-tlv"
