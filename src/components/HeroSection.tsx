@@ -9,6 +9,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 dot-pattern opacity-40 z-0"></div>
       <div className="absolute top-20 right-10 h-24 w-24 explosion animate-pulse-bright z-0"></div>
       <div className="absolute bottom-40 left-10 h-16 w-16 explosion bg-comic-yellow animate-float z-0"></div>
+      
+      {/* Larger, more visible background text */}
+      <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/4 text-9xl font-bold opacity-15 z-0 rotate-6 text-comic-red">POW!</div>
       <div className="absolute top-40 left-10 text-8xl font-bold opacity-10 z-0">POW!</div>
       <div className="absolute bottom-20 right-20 text-8xl font-bold opacity-10 z-0">ZAP!</div>
       
