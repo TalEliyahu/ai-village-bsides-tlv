@@ -1,8 +1,32 @@
-# Welcome to your Lovable project
+
+# AI Village @ BSides TLV 2025
+
+## Project Overview
+
+Official website for the AI Village @ BSides TLV 2025 conference - a focused track dedicated to AI system security, bringing together researchers, engineers, and security professionals to explore attack surfaces and defense strategies in AI technologies.
+
+**Event Date:** June 26, 2025  
+**Location:** Tel Aviv University  
+**Theme:** Comic Book Multiverse Edition
+
+## Website Features
+
+- **Event Information:** Details about the AI Village track, its mission, and vision
+- **Speaker Showcase:** Profiles of industry experts and security researchers
+- **Schedule:** Complete agenda for the AI Village track
+- **Topics:** Coverage of key AI security areas including LLM red teaming, prompt injection, adversarial attacks, and more
 
 ## Project info
 
 **URL**: https://lovable.dev/projects/821d2682-be58-43df-8030-c0d0637dd05b
+
+## Technical Implementation
+
+The website features:
+- Comic book inspired design with vibrant colors and animations
+- Fully responsive layout for all devices
+- Optimized social media previews for various platforms
+- SEO-friendly with structured data implementation
 
 ## How can I edit this code?
 
@@ -52,7 +76,7 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
