@@ -9,6 +9,70 @@ AI Village @ BSides TLV 2025 - A focused track dedicated to AI system security, 
 **Location:** Tel Aviv University  
 **Theme:** Comic Book Multiverse Edition
 
+## About the AI Village
+
+The AI Village at BSides TLV is a community-driven track exploring the intersection of artificial intelligence and cybersecurity. As AI systems become deeply embedded in infrastructure, security tools, and everyday operations, understanding how to break, secure, and stress-test these systems is no longer optional — it's essential.
+
+New for 2025, the AI Village was created to address the growing need for practical, community-driven exploration of AI security threats.
+
+📅 Join us on June 26, 2025, at BSides TLV to be part of Israel's first AI security village.
+
+### 🔍 What
+
+The AI Village is a focused track at BSides TLV dedicated to the security of AI systems. Through a curated lineup of technical talks and expert-led discussions, we unpack real-world attack surfaces across AI-powered technologies — from model red teaming and prompt injection, to data poisoning, misuse, and adversarial manipulation.
+
+### ❓ Why
+
+AI systems are being deployed across every sector — from critical infrastructure to national defense — but they bring with them new, often poorly understood attack surfaces.
+
+The AI Village brings together hackers, engineers, and researchers who are actively probing these systems — sharing insights, tooling, and tradecraft to help the wider community secure AI in practice, not just in theory.
+
+### 🎯 Mission
+
+To build a technically grounded, hands-on community in Israel focused on the secure and responsible use of AI. We aim to bridge the gap between AI practitioners and security professionals by fostering open collaboration, practical knowledge exchange, and applied research.
+
+### 🌟 Vision
+
+A future where AI systems are designed with security at their core — scrutinized, stress-tested, and improved by communities that understand how they can be manipulated, exploited, or fail in the real world.
+
+### 🤝 Who Should Join?
+
+If you're curious about how AI systems break — and how to secure them — you belong here. Whether you're a security researcher, AI practitioner, policy wonk, or hacker at heart, the AI Village is your space to engage, share, and learn.
+
+### 💬 Topics We'll Cover
+
+- Red teaming LLMs and generative AI systems
+- Adversarial evasion and bypass techniques
+- AI model abuse, jailbreaks, and prompt manipulation
+- Training data attacks and poisoning
+- Defense strategies for robust AI deployment
+- Securing the responsible use of AI in security operations
+- Prompt injection and indirect prompt chaining attacks
+- AI supply chain risks (model provenance, tampering, and dependencies)
+- Detecting AI-generated content in security workflows
+- Interpretability and explainability in high-stakes environments
+- Evaluating the limits of AI in incident response and threat detection
+
+### 🎤 Confirmed Lineup
+
+We're proud to feature speakers from across the Israeli AI and cybersecurity community:
+
+- Daniel Liezrowice – CEO and Co-Founder at Engineering Software Lab (ESL)
+- Alex Polyakov – Co-Founder and CEO at Adversa AI
+- Vitaly Simonovich – Threat Intelligence Researcher at Cato Networks
+- Itamar Golan – CEO and Co-Founder at Prompt Security
+- Dor Amit – Co-Founder at 10root Cyber Security
+- Elli Shlomo – Head of Security Research at Guardz
+- Ran Dubin – CTO at BUFFERZONE Security and Senior Lecturer at Ariel University
+- Tal Skverer – Head of Research at Astrix Security
+- Ziv Karliner – Co-Founder and CTO at Pillar Security
+- One speaker to be confirmed
+
+### 📢 Stay Updated
+
+More details coming soon, including agenda, CFP, and registration.
+In the meantime, follow @BSidesTLV or visit bsidestlv.com for updates.
+
 ## Website Features
 
 - **Event Information:** Details about the AI Village track, its mission, and vision
