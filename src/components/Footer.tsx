@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="py-6 sm:py-10 px-4 sm:px-8 relative bg-comic-black border-t-4 border-comic-yellow">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="font-bangers text-2xl sm:text-3xl md:text-4xl text-white mb-4 sm:mb-6">
-          THE AI VILLAGE @ BSIDES TLV
+          AI VILLAGE @ BSIDES TLV
         </h2>
         
         <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
