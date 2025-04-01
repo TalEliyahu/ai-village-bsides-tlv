@@ -24,7 +24,8 @@ const SpeakersSection = () => {
       organization: "Engineering Software Lab (ESL)",
       placeholder: "DL",
       confirmed: true,
-      linkedinUrl: "https://www.linkedin.com/in/liezrowice/"
+      linkedinUrl: "https://www.linkedin.com/in/liezrowice/",
+      imageUrl: "/lovable-uploads/ea1141e0-4dcb-4018-99ab-e00c9def11f6.png"
     },
     {
       name: "Alex Polyakov",
