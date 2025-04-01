@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -7,6 +6,14 @@ import SpeakersSection from '@/components/SpeakersSection';
 import WhyAttendSection from '@/components/WhyAttendSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import { 
+  Breadcrumb,
+  BreadcrumbList,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbPage,
+  BreadcrumbSeparator
+} from "@/components/ui/breadcrumb";
 
 const Index = () => {
   // Add structured data for event
@@ -61,13 +68,82 @@ const Index = () => {
     });
     document.head.appendChild(script);
     
+    // Add breadcrumb structured data
+    const breadcrumbScript = document.createElement('script');
+    breadcrumbScript.type = 'application/ld+json';
+    breadcrumbScript.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aivillage.bsidestlv.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://aivillage.bsidestlv.com/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Speakers",
+          "item": "https://aivillage.bsidestlv.com/#speakers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Schedule",
+          "item": "https://aivillage.bsidestlv.com/#schedule"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Why Attend",
+          "item": "https://aivillage.bsidestlv.com/#why-attend"
+        }
+      ]
+    });
+    document.head.appendChild(breadcrumbScript);
+    
     return () => {
       document.head.removeChild(script);
+      document.head.removeChild(breadcrumbScript);
     };
   }, []);
 
   return (
     <main className="min-h-screen overflow-x-hidden">
+      {/* Hidden breadcrumb for SEO - visually hidden but accessible to screen readers and search engines */}
+      <div className="sr-only">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="#about">About</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="#speakers">Speakers</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="#schedule">Schedule</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Why Attend</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+      
       <HeroSection />
       {/* Reduced spacing between hero and about section */}
       <div className="-mt-16 md:-mt-20"></div>
