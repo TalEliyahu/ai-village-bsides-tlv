@@ -26,17 +26,17 @@ const WhyAttendSection = () => {
   ];
 
   return (
-    <section id="why-attend" className="py-20 px-4 relative bg-comic-red/10">
+    <section id="why-attend" className="py-12 px-4 relative bg-comic-red/10">
       <div className="max-w-6xl mx-auto">
         {/* Section title */}
-        <div className="flex items-center justify-center mb-16">
+        <div className="flex items-center justify-center mb-8">
           <div className="h-0.5 w-12 bg-comic-blue"></div>
           <h2 className="font-bangers text-5xl px-4 text-white comic-text-stroke">WHY ATTEND</h2>
           <div className="h-0.5 w-12 bg-comic-blue"></div>
         </div>
         
         {/* Reasons grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {reasons.map((reason, index) => (
             <div 
               key={index} 
@@ -57,9 +57,9 @@ const WhyAttendSection = () => {
         </div>
         
         {/* Final call to action */}
-        <div className="mt-16 text-center">
-          <div className="inline-block comic-panel-slant bg-comic-blue p-8 text-white">
-            <h3 className="font-bangers text-4xl mb-4">JOIN THE ADVENTURE!</h3>
+        <div className="mt-10 text-center">
+          <div className="inline-block comic-panel-slant bg-comic-blue p-6 text-white">
+            <h3 className="font-bangers text-4xl mb-3">JOIN THE ADVENTURE!</h3>
             <p className="font-comic text-xl max-w-2xl mx-auto">
               Be part of the most exciting AI security event of the year. Whether you're a seasoned security professional or just curious about AI security, there's something for everyone at The AI Village!
             </p>

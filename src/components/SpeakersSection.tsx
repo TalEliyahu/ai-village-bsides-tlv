@@ -109,17 +109,17 @@ const SpeakersSection = () => {
   ];
 
   return (
-    <section id="speakers" className="py-16 md:py-20 px-4 relative">
+    <section id="speakers" className="py-12 px-4 relative">
       <div className="max-w-6xl mx-auto">
         {/* Section title */}
-        <div className="flex items-center justify-center mb-12 md:mb-16">
+        <div className="flex items-center justify-center mb-8">
           <div className="h-0.5 w-8 md:w-12 bg-comic-red"></div>
           <h2 className="font-bangers text-4xl md:text-5xl px-4 text-white comic-text-stroke">SPEAKERS</h2>
           <div className="h-0.5 w-8 md:w-12 bg-comic-red"></div>
         </div>
         
         {/* Speakers grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {speakers.map((speaker, index) => (
             <div 
               key={index} 
@@ -146,7 +146,7 @@ const SpeakersSection = () => {
                   </div>
                 )}
                 
-                <div className="p-4 bg-white">
+                <div className="p-3 bg-white">
                   <div className="flex items-center justify-between">
                     <h3 className="font-bangers text-xl md:text-2xl text-comic-black">{speaker.name}</h3>
                     {speaker.linkedinUrl && (
@@ -162,7 +162,7 @@ const SpeakersSection = () => {
                     )}
                   </div>
                   <p className="text-sm font-bold text-comic-red mb-1">{speaker.title} @ {speaker.organization}</p>
-                  <div className="h-0.5 w-12 bg-comic-black mb-2"></div>
+                  <div className="h-0.5 w-12 bg-comic-black mb-1"></div>
                 </div>
                 
                 {!speaker.confirmed && (
