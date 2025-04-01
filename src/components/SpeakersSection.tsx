@@ -61,7 +61,7 @@ const SpeakersSection = () => {
       placeholder: "DA",
       confirmed: true,
       linkedinUrl: "https://www.linkedin.com/in/dor-amit-7791397/",
-      imageUrl: "/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png"
+      imageUrl: "/lovable-uploads/321e45cd-712e-4f95-9a89-94b37070a3e6.png"
     },
     {
       name: "Elli Shlomo",
