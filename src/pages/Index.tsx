@@ -26,7 +26,7 @@ const Index = () => {
     // Prefetch important resources
     const prefetchResources = () => {
       const links = [
-        '/lovable-uploads/63e43999-fbcf-4f17-bee1-7985e3fce95f.png' // Main logo and favicon
+        '/favicon.ico' // Main logo and favicon
       ];
       
       links.forEach(link => {
