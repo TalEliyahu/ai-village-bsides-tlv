@@ -6,6 +6,7 @@ import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import MobileNav from '@/components/MobileNav';
 import { 
   Breadcrumb,
   BreadcrumbList,
@@ -194,6 +195,7 @@ const Index = () => {
       <ScheduleSection />
       <Footer />
       <ScrollToTopButton />
+      <MobileNav />
     </main>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="py-8 sm:py-12 px-4 relative bg-comic-black border-t-4 border-comic-yellow">
+    <footer className="py-8 sm:py-12 px-4 relative bg-comic-black border-t-4 border-comic-yellow mb-16 sm:mb-0">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="font-bangers text-2xl sm:text-3xl md:text-4xl text-white mb-4 sm:mb-6">
           THE AI VILLAGE @ BSIDES TLV
