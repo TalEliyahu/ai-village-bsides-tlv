@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -12,6 +12,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 
 const MobileNav = () => {
   const isMobile = useIsMobile();
+  const [open, setOpen] = useState(false);
   
   if (!isMobile) return null;
   
@@ -19,11 +20,23 @@ const MobileNav = () => {
     { name: 'About', href: '#about' },
     { name: 'Speakers', href: '#speakers' },
     { name: 'Schedule', href: '#schedule' },
+    { name: 'Why Attend', href: '#why-attend' },
   ];
+  
+  const handleLinkClick = (href: string) => {
+    setOpen(false); // Close the drawer
+    // Allow time for the drawer to close before scrolling
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300);
+  };
   
   return (
     <div className="fixed bottom-6 right-6 z-50">
-      <Drawer>
+      <Drawer open={open} onOpenChange={setOpen}>
         <DrawerTrigger asChild>
           <Button 
             className="h-14 w-14 rounded-full bg-comic-red hover:bg-comic-red/90 shadow-lg flex items-center justify-center"
@@ -39,14 +52,13 @@ const MobileNav = () => {
             </h3>
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <DrawerClose key={link.name} asChild>
-                  <a
-                    href={link.href}
-                    className="w-full py-3 px-4 bg-comic-blue text-white font-bangers text-xl text-center rounded-md hover:bg-comic-blue/90 transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </DrawerClose>
+                <button
+                  key={link.name}
+                  onClick={() => handleLinkClick(link.href)}
+                  className="w-full py-3 px-4 bg-comic-blue text-white font-bangers text-xl text-center rounded-md hover:bg-comic-blue/90 transition-colors"
+                >
+                  {link.name}
+                </button>
               ))}
             </nav>
           </div>
