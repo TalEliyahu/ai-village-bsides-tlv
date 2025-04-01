@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Clock, Coffee, Utensils, Mic } from 'lucide-react';
 import { 
@@ -96,14 +95,14 @@ const ScheduleSection = () => {
   return (
     <section id="schedule" className="py-20 px-4 relative bg-comic-blue/10">
       <div className="max-w-6xl mx-auto">
-        {/* Section title */}
+        {/* Section title - Modified to improve contrast */}
         <div className="flex items-center justify-center mb-16">
           <div className="h-0.5 w-12 bg-comic-yellow"></div>
-          <h2 className="font-bangers text-5xl px-4 text-comic-black">EVENT SCHEDULE</h2>
+          <h2 className="font-bangers text-5xl px-4 text-comic-black bg-comic-white/80 py-2 rounded-lg comic-border">EVENT SCHEDULE</h2>
           <div className="h-0.5 w-12 bg-comic-yellow"></div>
         </div>
         
-        {/* Info box - MODIFIED: Removed the text about Tel Aviv University and date */}
+        {/* Info box */}
         <div className="bg-comic-blue p-6 comic-border text-white mb-12 max-w-xl mx-auto">
           <div className="flex items-center gap-4">
             <Clock className="h-8 w-8 flex-shrink-0" />
