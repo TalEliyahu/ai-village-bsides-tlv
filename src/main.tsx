@@ -8,7 +8,7 @@ import { injectStructuredData } from './utils/injectStructuredData.ts'
 injectStructuredData();
 
 // Also ensure it's injected after DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   injectStructuredData();
 });
 
