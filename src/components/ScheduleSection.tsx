@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Clock, Coffee, Utensils, Mic, Calendar, Sun, Briefcase } from 'lucide-react';
 import { 
@@ -79,21 +80,25 @@ const ScheduleSection = () => {
           <span className="font-comic text-right text-comic-black">{item.duration}</span>
         </div>
         
-        <div className="flex items-center gap-2 mb-2">
-          {item.type === 'break' && <Coffee size={16} className="text-gray-500" />}
-          {item.type === 'lunch' && <Utensils size={16} className="text-comic-red" />}
-          {(item.type === 'keynote' || item.type === 'closing') && <Mic size={16} className="text-comic-blue" />}
-          <span className="font-comic text-comic-black font-bold">{item.title}</span>
-          {item.type === 'keynote' && (
-            <span className="ml-2 inline-block px-2 py-1 bg-comic-yellow text-xs rounded-full text-black font-bold">KEYNOTE</span>
-          )}
-          {item.type === 'closing' && (
-            <span className="ml-2 inline-block px-2 py-1 bg-comic-blue text-xs rounded-full text-white font-bold">CLOSING</span>
-          )}
-        </div>
-        
-        {item.speaker !== "—" && (
-          <div className="font-comic text-comic-black pl-6">Speaker: {item.speaker}</div>
+        {item.type === 'talk' ? (
+          <>
+            {item.speaker !== "—" && (
+              <div className="font-comic text-comic-black font-bold">{item.speaker}</div>
+            )}
+          </>
+        ) : (
+          <div className="flex items-center gap-2 mb-2">
+            {item.type === 'break' && <Coffee size={16} className="text-gray-500" />}
+            {item.type === 'lunch' && <Utensils size={16} className="text-comic-red" />}
+            {(item.type === 'keynote' || item.type === 'closing') && <Mic size={16} className="text-comic-blue" />}
+            <span className="font-comic text-comic-black font-bold">{item.title}</span>
+            {item.type === 'keynote' && (
+              <span className="ml-2 inline-block px-2 py-1 bg-comic-yellow text-xs rounded-full text-black font-bold">KEYNOTE</span>
+            )}
+            {item.type === 'closing' && (
+              <span className="ml-2 inline-block px-2 py-1 bg-comic-blue text-xs rounded-full text-white font-bold">CLOSING</span>
+            )}
+          </div>
         )}
       </div>
     ));
