@@ -2,7 +2,7 @@ export const generateEventStructuredData = () => {
   return {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": "The AI Village @ BSides TLV 2025 - Comic Book Multiverse Edition",
+    "name": "AI Village @ BSides TLV 2025",
     "description": "AI Village @ BSides TLV brings together researchers, engineers, and security professionals for a focused day on AI system security, attack surfaces, and defense strategies.",
     "startDate": "2025-06-26T09:00:00+03:00",
     "endDate": "2025-06-26T18:00:00+03:00",
