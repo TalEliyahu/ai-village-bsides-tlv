@@ -129,7 +129,12 @@ const SpeakersSection = () => {
                 {speaker.imageUrl ? (
                   <div className="aspect-square bg-comic-red">
                     <Avatar className="w-full h-full rounded-none">
-                      <AvatarImage src={speaker.imageUrl} alt={speaker.name} className="object-cover" />
+                      <AvatarImage 
+                        src={speaker.imageUrl} 
+                        alt={`${speaker.name} - ${speaker.title} at ${speaker.organization}`} 
+                        className="object-cover" 
+                        loading="lazy"
+                      />
                       <AvatarFallback className="bg-comic-red text-4xl md:text-5xl font-bangers text-white">
                         {speaker.placeholder}
                       </AvatarFallback>

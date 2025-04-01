@@ -43,13 +43,13 @@ const WhyAttendSection = () => {
               className="comic-panel bg-white relative overflow-hidden hover:transform hover:scale-105 transition-transform duration-300"
             >
               <div className="flex">
-                <div className="text-5xl mr-4">{reason.emoji}</div>
+                <div className="text-5xl mr-4" role="img" aria-hidden="true">{reason.emoji}</div>
                 <div>
                   <h3 className="font-bangers text-2xl text-comic-black mb-2">{reason.title}</h3>
                   <p className="font-comic text-gray-700">{reason.description}</p>
                 </div>
               </div>
-              <div className="absolute -bottom-2 -right-2 h-12 w-12 bg-comic-yellow transform rotate-12 flex items-center justify-center">
+              <div className="absolute -bottom-2 -right-2 h-12 w-12 bg-comic-yellow transform rotate-12 flex items-center justify-center" aria-hidden="true">
                 <span className="font-bangers text-2xl text-comic-black transform -rotate-12">{index + 1}</span>
               </div>
             </div>
