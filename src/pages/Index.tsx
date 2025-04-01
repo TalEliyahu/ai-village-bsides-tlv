@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -23,7 +22,7 @@ import {
 
 const Index = () => {
   useEffect(() => {
-    // Prefetch important resources
+    // Prefetch favicon
     const prefetchResources = () => {
       const links = [
         '/favicon.ico' // Main logo and favicon

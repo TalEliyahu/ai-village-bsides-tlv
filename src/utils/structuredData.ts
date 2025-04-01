@@ -1,3 +1,4 @@
+
 export const generateEventStructuredData = () => {
   return {
     "@context": "https://schema.org",
@@ -23,7 +24,7 @@ export const generateEventStructuredData = () => {
         "longitude": "34.8044"
       }
     },
-    "image": "https://aivillagetlv.com/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png",
+    "image": "https://aivillagetlv.com/favicon.ico",
     "offers": {
       "@type": "Offer",
       "url": "https://aivillagetlv.com/",
@@ -135,7 +136,7 @@ export const generateOrganizationStructuredData = () => {
     "@type": "Organization",
     "name": "AI Village @ BSides TLV",
     "url": "https://aivillagetlv.com",
-    "logo": "https://aivillagetlv.com/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png",
+    "logo": "https://aivillagetlv.com/favicon.ico",
     "sameAs": [
       "https://twitter.com/bsidestlv",
       "https://www.linkedin.com/company/bsides-tlv"
