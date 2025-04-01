@@ -17,6 +17,12 @@ window.addEventListener('load', () => {
     injectStructuredData();
     console.log('Delayed structured data injection completed');
   }, 2000);
+  
+  // Extra delayed injection specifically for WhatsApp which may need more time
+  setTimeout(() => {
+    injectStructuredData();
+    console.log('Extended delay structured data injection for WhatsApp completed');
+  }, 5000);
 });
 
 createRoot(document.getElementById("root")!).render(<App />);

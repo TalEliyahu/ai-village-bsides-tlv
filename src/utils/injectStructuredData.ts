@@ -35,14 +35,19 @@ const ensureSocialMediaPreviewTags = () => {
   // Define the high-quality image URL - use absolute URL for better compatibility
   // Add a cache-busting parameter to force fresh image load
   const timestamp = new Date().getTime();
+  // For WhatsApp, static URL works better than one with parameters
+  const staticImageUrl = 'https://aivillagetlv.com/Social.png';
+  // Use timestamp for other platforms that might cache aggressively
   const highQualityImageUrl = `https://aivillagetlv.com/Social.png?t=${timestamp}`;
   
   // Array of social media meta properties to check and update
   const socialMetaTags = [
+    // WhatsApp-specific tags - these need to be static URLs without parameters
+    { property: 'og:image', content: staticImageUrl },
+    { property: 'og:image:url', content: staticImageUrl },
+    { property: 'og:image:secure_url', content: staticImageUrl },
+    
     // Basic Open Graph tags used by most platforms
-    { property: 'og:image', content: highQualityImageUrl },
-    { property: 'og:image:url', content: highQualityImageUrl },
-    { property: 'og:image:secure_url', content: highQualityImageUrl },
     { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
@@ -87,7 +92,7 @@ const ensureSocialMediaPreviewTags = () => {
     metaTag.setAttribute('content', tag.content);
   });
   
-  // Add a preload hint for the image
+  // Add a preload hint for the image - important for WhatsApp
   const imageUrl = 'https://aivillagetlv.com/Social.png';
   const preloadLink = document.querySelector(`link[rel="preload"][href="${imageUrl}"]`);
   if (!preloadLink) {
