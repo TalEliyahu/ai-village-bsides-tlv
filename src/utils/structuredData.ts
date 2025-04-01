@@ -136,7 +136,8 @@ export const generateOrganizationStructuredData = () => {
     "@type": "Organization",
     "name": "AI Village @ BSides TLV",
     "url": "https://aivillagetlv.com",
-    "logo": "https://aivillagetlv.com/favicon.ico",
+    "logo": "https://aivillagetlv.com/lovable-uploads/51ca7cd5-565c-431f-8c23-c5427cc07cca.png",
+    "image": "https://aivillagetlv.com/lovable-uploads/51ca7cd5-565c-431f-8c23-c5427cc07cca.png",
     "sameAs": [
       "https://twitter.com/bsidestlv",
       "https://www.linkedin.com/company/bsides-tlv"
