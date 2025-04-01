@@ -82,7 +82,7 @@ In the meantime, follow @BSidesTLV or visit bsidestlv.com for updates.
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/821d2682-be58-43df-8030-c0d0637dd05b
+**URL**: https://aivillagetlv.com/ 
 
 ## Technical Implementation
 
