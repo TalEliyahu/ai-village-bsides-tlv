@@ -41,7 +41,7 @@ Allow: /
 # Disallow: /temp-images/
 
 # Sitemap location
-Sitemap: https://aivillage.bsidestlv.com/sitemap.xml
+Sitemap: https://aivillagetlv.com/sitemap.xml
 
 # Host directive (helps with canonical domain issues)
-Host: aivillage.bsidestlv.com
+Host: aivillagetlv.com

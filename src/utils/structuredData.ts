@@ -24,10 +24,10 @@ export const generateEventStructuredData = () => {
         "longitude": "34.8044"
       }
     },
-    "image": "https://aivillage.bsidestlv.com/lovable-uploads/e68b54a4-7599-4310-909c-7c7ee969c3d9.png",
+    "image": "https://aivillagetlv.com/lovable-uploads/e68b54a4-7599-4310-909c-7c7ee969c3d9.png",
     "offers": {
       "@type": "Offer",
-      "url": "https://aivillage.bsidestlv.com/",
+      "url": "https://aivillagetlv.com/",
       "price": "0",
       "priceCurrency": "ILS",
       "availability": "https://schema.org/InStock",
@@ -57,25 +57,25 @@ export const generateBreadcrumbStructuredData = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://aivillage.bsidestlv.com/"
+        "item": "https://aivillagetlv.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "About",
-        "item": "https://aivillage.bsidestlv.com/#about"
+        "item": "https://aivillagetlv.com/#about"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Speakers",
-        "item": "https://aivillage.bsidestlv.com/#speakers"
+        "item": "https://aivillagetlv.com/#speakers"
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Schedule",
-        "item": "https://aivillage.bsidestlv.com/#schedule"
+        "item": "https://aivillagetlv.com/#schedule"
       }
     ]
   };
