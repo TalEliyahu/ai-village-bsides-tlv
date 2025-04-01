@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -186,8 +187,8 @@ const Index = () => {
       </div>
       
       <HeroSection />
-      {/* Reduced spacing between hero and about section */}
-      <div className="-mt-16 md:-mt-20"></div>
+      {/* Adjusted spacing between hero and about section for mobile */}
+      <div className="-mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20"></div>
       <AboutSection />
       <SpeakersSection />
       <ScheduleSection />
