@@ -108,6 +108,13 @@ const SpeakersSection = () => {
       confirmed: true,
       imageUrl: "/lovable-uploads/57b467e3-8aa6-41e7-9fae-5449489f3d3f.png",
       role: "AI Village Lead"
+    },
+    {
+      name: "Speaker TBA",
+      title: "Security Researcher",
+      organization: "To Be Announced",
+      placeholder: "?",
+      confirmed: false
     }
   ];
 
