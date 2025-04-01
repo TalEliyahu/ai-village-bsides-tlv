@@ -30,7 +30,7 @@ const HeroSection = () => {
         </div>
         
         <h1 className="font-luckiest text-6xl md:text-8xl mb-6 comic-text-stroke animate-skew">
-          <span className="text-comic-red">THE</span> <span className="text-comic-blue">AI</span> <span className="text-comic-yellow">VILLAGE</span>
+          <span className="text-comic-blue">AI</span> <span className="text-comic-yellow">VILLAGE</span>
           <span className="block"><span className="text-white">@</span> <span className="text-comic-red">BSIDES</span> <span className="text-comic-blue">TLV</span></span>
         </h1>
         
