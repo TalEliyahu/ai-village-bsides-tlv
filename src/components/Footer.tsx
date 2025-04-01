@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Github } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -19,6 +20,19 @@ const Footer = () => {
           <div className="bg-comic-yellow px-3 py-1 sm:px-4 sm:py-2 text-comic-black font-comic font-bold text-sm sm:text-base">
             COMIC MULTIVERSE EDITION
           </div>
+        </div>
+        
+        <div className="mt-4">
+          <a 
+            href="https://github.com/TalEliyahu/ai-village-bsides-tlv" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-white hover:text-comic-yellow transition-colors"
+            aria-label="GitHub repository"
+          >
+            <Github size={24} />
+            <span className="font-comic text-sm">Source Code</span>
+          </a>
         </div>
       </div>
     </footer>
