@@ -18,13 +18,13 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://aivillagetlv.com/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png</image:loc>
+      <image:loc>https://aivillagetlv.com/lovable-uploads/63e43999-fbcf-4f17-bee1-7985e3fce95f.png</image:loc>
       <image:title>The AI Village @ BSides TLV 2025 - Comic Book Multiverse Edition</image:title>
       <image:caption>Israel's premier AI security conference at Tel Aviv University</image:caption>
     </image:image>
     <!-- Future promotional video can be added here -->
     <video:video>
-      <video:thumbnail_loc>https://aivillagetlv.com/lovable-uploads/6988e09b-df4a-4821-802e-2592507f1db0.png</video:thumbnail_loc>
+      <video:thumbnail_loc>https://aivillagetlv.com/lovable-uploads/63e43999-fbcf-4f17-bee1-7985e3fce95f.png</video:thumbnail_loc>
       <video:title>AI Village @ BSides TLV 2025 Promo</video:title>
       <video:description>Join Israel's premier AI security conference to explore AI vulnerabilities and solutions</video:description>
       <video:content_loc>https://aivillagetlv.com/videos/promo2025.mp4</video:content_loc>
