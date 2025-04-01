@@ -177,7 +177,7 @@ const ScheduleSection = () => {
           <div className="bg-comic-black text-white p-4 font-bangers text-2xl mb-2 comic-border inline-flex items-center gap-2">
             <Clock size={24} />
             <span>Afternoon Sessions</span>
-            <Coffee size={24} />
+            <Calendar size={24} />
           </div>
           
           <div className="comic-panel-jagged bg-white overflow-hidden overflow-x-auto">
