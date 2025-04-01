@@ -229,7 +229,6 @@ const ScheduleSection = () => {
           <div className="bg-comic-red text-white p-3 md:p-4 font-bangers text-xl md:text-2xl mb-2 comic-border inline-flex items-center gap-2">
             <Utensils size={isMobile ? 20 : 24} />
             <span>Lunch Break</span>
-            <Coffee size={isMobile ? 20 : 24} />
           </div>
           
           {isMobile ? (
