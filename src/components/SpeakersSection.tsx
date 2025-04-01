@@ -12,6 +12,7 @@ type Speaker = {
   confirmed: boolean;
   linkedinUrl?: string; // Optional LinkedIn profile URL
   imageUrl?: string; // Optional image URL
+  role?: string; // Optional role information
 };
 
 const SpeakersSection = () => {
@@ -100,11 +101,13 @@ const SpeakersSection = () => {
       imageUrl: "/lovable-uploads/51ca7cd5-565c-431f-8c23-c5427cc07cca.png"
     },
     {
-      name: "Speaker TBA",
-      title: "Security Researcher",
-      organization: "To Be Announced",
-      placeholder: "?",
-      confirmed: false
+      name: "Tal Eliyahu",
+      title: "Director, Cybersecurity & Technology Innovation",
+      organization: "InnovGuard",
+      placeholder: "TE",
+      confirmed: true,
+      imageUrl: "/lovable-uploads/57b467e3-8aa6-41e7-9fae-5449489f3d3f.png",
+      role: "AI Village Lead"
     }
   ];
 
@@ -162,6 +165,9 @@ const SpeakersSection = () => {
                     )}
                   </div>
                   <p className="text-sm font-bold text-comic-red mb-1">{speaker.title} @ {speaker.organization}</p>
+                  {speaker.role && (
+                    <p className="text-sm font-bold text-comic-blue">{speaker.role}</p>
+                  )}
                   <div className="h-0.5 w-12 bg-comic-black mb-1"></div>
                 </div>
                 
