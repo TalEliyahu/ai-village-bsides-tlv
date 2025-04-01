@@ -20,7 +20,6 @@ const MobileNav = () => {
     { name: 'About', href: '#about' },
     { name: 'Speakers', href: '#speakers' },
     { name: 'Schedule', href: '#schedule' },
-    { name: 'Why Attend', href: '#why-attend' },
   ];
   
   const handleLinkClick = (href: string) => {

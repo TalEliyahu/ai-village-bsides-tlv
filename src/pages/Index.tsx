@@ -1,10 +1,8 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import ScheduleSection from '@/components/ScheduleSection';
 import SpeakersSection from '@/components/SpeakersSection';
-import WhyAttendSection from '@/components/WhyAttendSection';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import MobileNav from '@/components/MobileNav';
@@ -184,10 +182,6 @@ const Index = () => {
             <BreadcrumbItem>
               <BreadcrumbLink href="#schedule">Schedule</BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbLink href="#why-attend">Why Attend</BreadcrumbLink>
-            </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </div>
@@ -198,7 +192,6 @@ const Index = () => {
       <AboutSection />
       <SpeakersSection />
       <ScheduleSection />
-      <WhyAttendSection />
       <Footer />
       <ScrollToTopButton />
       <MobileNav />
