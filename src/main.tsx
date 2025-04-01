@@ -5,6 +5,8 @@ import './index.css'
 import { injectStructuredData } from './utils/injectStructuredData.ts'
 
 // Inject structured data for SEO
-injectStructuredData();
+document.addEventListener('DOMContentLoaded', () => {
+  injectStructuredData();
+});
 
 createRoot(document.getElementById("root")!).render(<App />);

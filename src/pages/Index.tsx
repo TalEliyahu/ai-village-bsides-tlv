@@ -14,12 +14,6 @@ import {
   BreadcrumbLink,
   BreadcrumbSeparator
 } from "@/components/ui/breadcrumb";
-import { 
-  generateEventStructuredData, 
-  generateBreadcrumbStructuredData, 
-  generateFAQStructuredData,
-  generateOrganizationStructuredData
-} from '@/utils/structuredData';
 
 const Index = () => {
   useEffect(() => {
@@ -81,37 +75,9 @@ const Index = () => {
       });
     };
     
-    // Add structured data for SEO
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.innerHTML = JSON.stringify(generateEventStructuredData());
-    document.head.appendChild(script);
-    
-    const breadcrumbScript = document.createElement('script');
-    breadcrumbScript.type = 'application/ld+json';
-    breadcrumbScript.innerHTML = JSON.stringify(generateBreadcrumbStructuredData());
-    document.head.appendChild(breadcrumbScript);
-    
-    const faqScript = document.createElement('script');
-    faqScript.type = 'application/ld+json';
-    faqScript.innerHTML = JSON.stringify(generateFAQStructuredData());
-    document.head.appendChild(faqScript);
-    
-    const orgScript = document.createElement('script');
-    orgScript.type = 'application/ld+json';
-    orgScript.innerHTML = JSON.stringify(generateOrganizationStructuredData());
-    document.head.appendChild(orgScript);
-    
     addFavicon();
     prefetchResources();
     
-    // Cleanup function
-    return () => {
-      document.head.removeChild(script);
-      document.head.removeChild(breadcrumbScript);
-      document.head.removeChild(faqScript);
-      document.head.removeChild(orgScript);
-    };
   }, []);
 
   return (
